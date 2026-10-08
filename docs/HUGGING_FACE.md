@@ -2,7 +2,7 @@
 
 ## Recommendation
 
-Technically, yes: Hugging Face is a good distribution channel for a versioned embedding corpus. Operationally, publish only after receiving explicit permission from the AI That Works content owners and documenting the transcript rights.
+Hugging Face can distribute a versioned embedding corpus. Before you publish the corpus, get explicit permission from the AI That Works content owners. Document the transcript rights.
 
 Use a **[dataset repository](https://huggingface.co/docs/hub/en/datasets-adding)**, not a model repository. The vectors are outputs of `google/embeddinggemma-2`; they are not a new embedding model.
 
@@ -68,7 +68,11 @@ Document:
 - content licensing and permission statement;
 - privacy review;
 - takedown/correction contact; and
-- checksums, an independently verifiable signature or release digest, and reproducibility commands. Embedded checksums detect corruption but are not authenticity proof when distributed beside the files they cover.
+- checksums;
+- reproducibility commands; and
+- an independently verifiable signature or release digest.
+
+Checksums stored with the artifact can detect corruption. The checksums cannot prove that the artifact is authentic.
 
 ## Versioning
 
@@ -78,4 +82,4 @@ Treat the artifact as an immutable snapshot. Tag releases using the corpus date 
 2026-10-08-eg2-768-v1
 ```
 
-A new upstream video, transcript correction, diagram caption, chunking change, model revision, or dimension change should produce a new dataset revision rather than silently replacing vectors.
+Create a new dataset revision when any source, caption, chunking rule, model revision, or vector dimension changes. Do not silently replace vectors.

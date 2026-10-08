@@ -27,14 +27,14 @@ uv run python scripts/build_index.py --help
 
 ## Source refresh workflow
 
+Before you run `make sources`, make sure that the upstream clone has no uncommitted changes. The command does not update a dirty clone. YouTube caption retrieval can resume after an interruption. YouTube can limit the request rate. Do not bypass access controls. Do not use personal browser cookies for automation.
+
 ```bash
 make sources
 make manifest
 make transcripts
 make corpus
 ```
-
-`make sources` refuses to update a dirty upstream clone. YouTube caption retrieval is resumable and may be rate-limited. Do not bypass access controls or use personal browser cookies in automation.
 
 The Apple-Silicon Whisper fallback is optional and local-only:
 
@@ -60,25 +60,25 @@ make docker-build
 make docker-test
 ```
 
-For retrieval/index changes, build a smoke index and manually inspect representative searches for memory/context, adversarial review, and agent observability. Similarity scores alone are not sufficient evidence.
+If you change retrieval or indexing, build a smoke index. Manually inspect representative searches. Include searches about memory and context, adversarial review, and agent observability. Do not use similarity scores as the only evidence.
 
 ## Pull requests
 
-Keep pull requests focused. Include:
+Keep pull requests focused. Include this information:
 
-- problem and motivation;
-- files and behavior changed;
-- exact test commands and results;
-- whether chunking/index compatibility changed;
-- generated corpus/index counts when applicable;
-- new network calls, model downloads, or data-rights implications; and
-- screenshots or example query results when useful.
+- Describe the problem and motivation.
+- Identify the changed files and behavior.
+- Report the exact test commands and results.
+- State whether chunking or index compatibility changed.
+- Provide corpus and index counts when applicable.
+- Identify new network calls, model downloads, and data-rights implications.
+- Add screenshots or example query results when useful.
 
 ## Mapping and caption standards
 
 - Repository metadata is authoritative for episode IDs and exact linked videos.
 - Do not guess missing episode-folder mappings.
-- Any inferred mapping must be documented in `scripts/build_manifest.py` with evidence and confidence.
+- If you infer a mapping, document the mapping, evidence, and confidence in `scripts/build_manifest.py`.
 - Diagram captions must describe visible content and flag illegible or uncertain material.
 - Locally transcribed content must record the transcription model.
 

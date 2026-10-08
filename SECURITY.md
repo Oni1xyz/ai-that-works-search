@@ -6,9 +6,9 @@ This repository is pre-1.0. Security fixes are applied to the latest `main` bran
 
 ## Reporting a vulnerability
 
-Please do not open a public issue for vulnerabilities involving credential exposure, arbitrary code execution, unsafe model loading, path traversal, or unintended data exfiltration.
+Do not report the following vulnerabilities in a public issue: credential exposure, arbitrary code execution, unsafe model loading, path traversal, or unintended data exfiltration.
 
-Until a dedicated security contact is configured on the public repository, contact the repository owner privately through their GitHub profile and include:
+Until the repository has a dedicated security contact, report the vulnerability privately to the repository owner. Use the owner's GitHub profile. Include the following information:
 
 - affected commit;
 - reproduction steps;
@@ -25,9 +25,9 @@ Until a dedicated security contact is configured on the public repository, conta
 - `OPENAI_API_KEY`, Hugging Face credentials, browser cookies, and `.env` files must never be committed or logged.
 - The container runs as a non-root user.
 - Generated transcripts and indexes are ignored by Git.
-- Imported indexes and Hugging Face datasets are untrusted. Embedded SHA-256 values detect accidental corruption, not authenticity: an attacker able to replace an index can also replace its hashes. Use an independently published digest or trusted release signature when authenticity matters.
-- Index publication requires the output, staging, and versions directories to be owned by the current user and not group/world writable. Descriptor-relative operations prevent pathname substitution by other users; processes running as the same OS user remain inside the trusted local-user boundary.
+- Treat imported indexes and Hugging Face datasets as untrusted. Embedded SHA-256 values detect accidental corruption. The values do not prove authenticity. An attacker who replaces an index can also replace its hashes. If authenticity matters, verify an independently published digest or a trusted release signature.
+- Before publication, verify that the current user owns the output, staging, and versions directories. Verify that these directories are not group-writable or world-writable. Descriptor-relative operations prevent other users from substituting pathnames. Processes that run as the same operating-system user remain inside the trusted local-user boundary.
 
 ## Remote generation warning
 
-When `--generate` is used, retrieved excerpts are sent to the configured OpenAI-compatible endpoint. Users must verify that the endpoint is trusted and that sending those excerpts is permitted. Retrieval and `--prompt-only` remain local.
+Before you use `--generate`, verify that you trust the configured OpenAI-compatible endpoint. Confirm that you may send the retrieved excerpts to that endpoint. The command sends the excerpts to the endpoint. Retrieval and `--prompt-only` remain local.

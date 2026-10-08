@@ -2,7 +2,11 @@
 
 Local semantic search across the **AI That Works** YouTube show and its companion GitHub repository.
 
-This is a repository-first research tool, not a published Python package. Clone it, use the checked-in `uv` environment, and run the scripts directly.
+This repository contains a research tool. It is not a published Python package.
+
+1. Clone the repository.
+2. Use the checked-in `uv` environment.
+3. Run the scripts directly.
 
 The corpus combines:
 
@@ -24,7 +28,7 @@ The cloned upstream repository lives under `source/` and is intentionally ignore
 
 The referenced **Gemini Embedding 2** model is available through the Gemini API, not as downloadable Hugging Face weights. For local indexing, this project uses Google's current official open model, [`google/embeddinggemma-2`](https://huggingface.co/google/embeddinggemma-2), from Hugging Face.
 
-EmbeddingGemma 2 is not Gemini weights: it is a Gemma 4-derived, Apache-2.0 multimodal embedding model released by Google DeepMind. It is public and ungated on Hugging Face, supports 8,192-token inputs, emits 768-dimensional vectors, and supports Matryoshka reductions to 512/256/128 dimensions. This project uses its text path for transcripts and AI-assisted diagram captions.
+EmbeddingGemma 2 does not contain Gemini weights. It is a Gemma 4-derived, Apache-2.0 multimodal embedding model from Google DeepMind. Hugging Face provides the model without an access gate. The model accepts inputs of up to 8,192 tokens. It produces 768-dimensional vectors and can reduce them to 512, 256, or 128 dimensions. This project uses the text path for transcripts and AI-assisted diagram captions.
 
 The older `google/embeddinggemma-300m` model is text-only and manually license-gated; it is not used here.
 
@@ -62,9 +66,14 @@ mkdir -p index .cache/huggingface
 HOST_UID="$(id -u)" HOST_GID="$(id -g)" docker compose run --rm build-index
 ```
 
-Creating the bind-mounted directories as the host user and passing its UID/GID makes index writes portable on Linux rather than relying on Docker Desktop's permission mapping. The first build/index run downloads model weights into the ignored `.cache/huggingface` directory. Docker uses CPU PyTorch wheels and may be slower than Apple Silicon or a CUDA host. The Apple-Silicon MLX transcript fallback is host-only and is not included in the Linux image.
+On Linux, create the bind-mounted directories as the host user. Pass the host UID and GID. These steps make index files portable without Docker Desktop permission mapping. The first index build downloads model weights into the ignored `.cache/huggingface` directory. Docker uses CPU PyTorch wheels and can be slower than Apple Silicon or a CUDA host. The Linux image does not include the Apple-Silicon MLX transcript fallback.
 
-For optional remote answer synthesis, set credentials outside the repository and pass them only to an explicit generation invocation; ordinary retrieval and `--prompt-only` containers receive no API key:
+If you want remote answer synthesis:
+
+1. Store credentials outside the repository.
+2. Pass credentials only when you run generation.
+
+Ordinary retrieval and `--prompt-only` containers do not receive an API key:
 
 ```bash
 HOST_UID="$(id -u)" HOST_GID="$(id -g)" docker compose run --rm \
@@ -93,13 +102,20 @@ uv run python scripts/backfill_transcripts.py \
 uv run python scripts/build_corpus.py
 ```
 
-`make sources` checks out the upstream commit pinned by `UPSTREAM_REF` in the `Makefile`. To intentionally inspect a newer upstream revision, pass it explicitly, for example `make sources UPSTREAM_REF=origin/main`, then review and update the pin before committing regenerated manifests.
+`make sources` checks out the upstream commit that `UPSTREAM_REF` specifies in the `Makefile`.
+
+To inspect a newer upstream revision:
+
+1. Pass the revision explicitly. For example, use `make sources UPSTREAM_REF=origin/main`.
+2. Review the revision.
+3. Update the pin.
+4. Commit the regenerated manifests.
 
 The checked-in show snapshot and generated manifest deliberately exclude third-party episode descriptions. Corpus construction supports only source types with immutable, validated citation provenance.
 
 The backfill uses `mlx-community/distil-whisper-large-v3`, records the transcription model in every generated transcript, and deletes downloaded audio after successful processing.
 
-Corpus generation requires a clean Git checkout for repository-backed sources and writes `data/chunks.provenance.json`. That sidecar binds the chunks to the repository commit and checksums for the manifest, minimized YouTube snapshot, captions, chunker code, and transcript inputs. Index construction refuses missing, stale, dirty, or mismatched provenance.
+Corpus generation requires a clean Git checkout for repository-backed sources. It writes `data/chunks.provenance.json`. The `data/chunks.provenance.json` file binds each chunk to the repository commit. It also records checksums for the manifest, YouTube snapshot, captions, chunker code, and transcript inputs. Index construction rejects missing, stale, dirty, or mismatched provenance.
 
 ## Build the requested index
 
@@ -121,7 +137,7 @@ Artifacts:
 
 Publishing retains older immutable versions and switches readers with one atomic pointer replacement, so a failed build cannot remove the prior active index. When online, the build resolves the requested Hugging Face model reference to an immutable commit and subsequent searches reuse that exact revision. Offline `--model-revision` values must be full 40-character commit SHAs; mutable branches and tags are rejected.
 
-Query commands allow only the documented EmbeddingGemma 2 and MiniLM smoke-test IDs by default. Opening an index that names another model requires the explicit `--allow-unlisted-model` opt-in after reviewing its model ID and pinned revision; remote model code remains disabled.
+By default, query commands allow only the documented EmbeddingGemma 2 and MiniLM smoke-test IDs. If an index names an unlisted model, first review the model ID and pinned revision. Then use `--allow-unlisted-model`. The application keeps remote model code disabled.
 
 ## Search
 
@@ -160,9 +176,9 @@ export AITW_RAG_MODEL='your-generation-model'
 uv run python scripts/rag.py 'Compare harness engineering and context engineering' --index index --generate
 ```
 
-The RAG prompt requires numbered inline citations and prohibits claims outside the retrieved context. Generated citation numbers are validated, and the application appends trusted timestamped YouTube links or commit-pinned repository URLs instead of trusting model-written source lists. Retrieval is capped per episode by default so one long transcript does not monopolize the context window.
+The RAG prompt requires numbered inline citations. It prohibits claims outside the retrieved context. The application validates each generated citation number. It appends trusted YouTube links with timestamps or repository URLs with pinned commits. It does not trust source lists that the model writes. By default, retrieval limits the number of results from each episode.
 
-Generated answers are emitted as inert terminal text, not trusted Markdown. Markdown metacharacters in model output and source titles are intentionally replaced with visually similar Unicode characters; this preserves readable text while preventing links, images, or HTML from becoming active if a caller later passes the output through a Markdown renderer.
+The application emits generated answers as inert terminal text. It does not emit trusted Markdown. The application replaces Markdown metacharacters in model output and source titles with similar Unicode characters. This replacement keeps the text readable. It also prevents a Markdown renderer from activating links, images, or HTML.
 
 ## Provenance and limitations
 
