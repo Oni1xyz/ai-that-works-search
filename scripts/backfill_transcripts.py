@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 """Backfill blocked YouTube captions by downloading audio and transcribing locally on Apple Silicon."""
+
 from __future__ import annotations
 
 import argparse
 import json
+import platform
 import subprocess
+from datetime import UTC, datetime
 from pathlib import Path
+
+from _shared import require_youtube_video_id
+
+YT_DLP_VERSION = "2026.8.19"
+MLX_WHISPER_VERSION = "0.4.3"
 
 
 def run(command: list[str]) -> None:
@@ -21,6 +29,12 @@ def main() -> int:
     parser.add_argument("--keep-audio", action="store_true")
     args = parser.parse_args()
 
+    if platform.system() != "Darwin" or platform.machine() != "arm64":
+        raise SystemExit(
+            "Local Whisper backfill currently requires Apple Silicon. On other platforms, "
+            "provide transcript JSON files in data/youtube or adapt this script to another Whisper runtime."
+        )
+
     entries = json.loads(args.show.read_text()).get("entries", [])
     args.output.mkdir(parents=True, exist_ok=True)
     args.audio_dir.mkdir(parents=True, exist_ok=True)
@@ -28,7 +42,7 @@ def main() -> int:
     status = []
 
     for order, entry in enumerate(entries, 1):
-        video_id = entry["id"]
+        video_id = require_youtube_video_id(entry["id"])
         destination = args.output / f"{video_id}.json"
         text_destination = args.output / f"{video_id}.txt"
         if destination.exists() and text_destination.exists():
@@ -37,25 +51,46 @@ def main() -> int:
         audio_template = args.audio_dir / f"{video_id}.%(ext)s"
         audio_path = args.audio_dir / f"{video_id}.m4a"
         whisper_json = args.audio_dir / f"{video_id}.json"
+        succeeded = False
         try:
             if not audio_path.exists():
                 print(f"[{order}/{len(entries)}] downloading {video_id}", flush=True)
-                run([
-                    "uvx", "--from", "yt-dlp", "yt-dlp",
-                    "--no-write-subs", "-f", "bestaudio[ext=m4a]/bestaudio",
-                    "-o", str(audio_template),
-                    f"https://www.youtube.com/watch?v={video_id}",
-                ])
+                run(
+                    [
+                        "uvx",
+                        "--from",
+                        f"yt-dlp=={YT_DLP_VERSION}",
+                        "yt-dlp",
+                        "--no-write-subs",
+                        "-f",
+                        "bestaudio[ext=m4a]",
+                        "-o",
+                        str(audio_template),
+                        f"https://www.youtube.com/watch?v={video_id}",
+                    ]
+                )
             print(f"[{order}/{len(entries)}] transcribing {video_id}", flush=True)
-            run([
-                "uvx", "--from", "mlx-whisper", "mlx_whisper", str(audio_path),
-                "--model", args.model,
-                "--language", "en",
-                "--output-dir", str(args.audio_dir),
-                "--output-name", video_id,
-                "--output-format", "json",
-                "--verbose", "False",
-            ])
+            run(
+                [
+                    "uvx",
+                    "--from",
+                    f"mlx-whisper=={MLX_WHISPER_VERSION}",
+                    "mlx_whisper",
+                    str(audio_path),
+                    "--model",
+                    args.model,
+                    "--language",
+                    "en",
+                    "--output-dir",
+                    str(args.audio_dir),
+                    "--output-name",
+                    video_id,
+                    "--output-format",
+                    "json",
+                    "--verbose",
+                    "False",
+                ]
+            )
             raw = json.loads(whisper_json.read_text())
             segments = [
                 {
@@ -74,18 +109,26 @@ def main() -> int:
                 "language": raw.get("language", "en"),
                 "is_generated": True,
                 "transcription_model": args.model,
+                "generated_at": datetime.now(UTC).isoformat(),
                 "segments": segments,
             }
             destination.write_text(json.dumps(document, indent=2, ensure_ascii=False) + "\n")
-            text_destination.write_text("\n".join(f"[{int(segment['start']) // 60}:{int(segment['start']) % 60:02d}] {segment['text']}" for segment in segments) + "\n")
+            text_destination.write_text(
+                "\n".join(
+                    f"[{int(segment['start']) // 60}:{int(segment['start']) % 60:02d}] {segment['text']}"
+                    for segment in segments
+                )
+                + "\n"
+            )
             status.append({"video_id": video_id, "status": "ok", "segments": len(segments)})
+            succeeded = True
             print(f"[{order}/{len(entries)}] ok {video_id}: {len(segments)} segments", flush=True)
         except Exception as exc:
             status.append({"video_id": video_id, "status": "error", "error": f"{type(exc).__name__}: {exc}"})
             print(f"[{order}/{len(entries)}] ERROR {video_id}: {exc}", flush=True)
         finally:
             status_path.write_text(json.dumps(status, indent=2) + "\n")
-            if not args.keep_audio:
+            if succeeded and not args.keep_audio:
                 audio_path.unlink(missing_ok=True)
                 whisper_json.unlink(missing_ok=True)
 

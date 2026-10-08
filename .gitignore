@@ -1,4 +1,12 @@
 .venv/
+.env
+.env.*
+!.env.example
+.cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 __pycache__/
 *.py[cod]
 .DS_Store
@@ -7,4 +15,6 @@ models/
 data/youtube/
 data/audio-cache/
 data/chunks.jsonl
+data/chunks.provenance.json
+data/source_manifest_subagent.json
 index*/

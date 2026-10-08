@@ -1,0 +1,38 @@
+services:
+  rag:
+    build:
+      context: .
+    image: ai-that-works-search:local
+    user: "${HOST_UID:-10001}:${HOST_GID:-10001}"
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    tmpfs: ["/tmp:rw,noexec,nosuid,nodev,size=64m"]
+    entrypoint: [".venv/bin/python", "scripts/rag.py"]
+    volumes:
+      - ./index:/app/index:ro
+      - ./.cache/huggingface:/cache/huggingface
+    command: ["--help"]
+
+  build-index:
+    build:
+      context: .
+    image: ai-that-works-search:local
+    user: "${HOST_UID:-10001}:${HOST_GID:-10001}"
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    entrypoint: [".venv/bin/python", "scripts/build_index.py"]
+    volumes:
+      - ./data:/app/data:ro
+      - ./index:/app/index
+      - ./source:/app/source:ro
+      - ./.cache/huggingface:/cache/huggingface
+    command:
+      - --chunks
+      - data/chunks.jsonl
+      - --model
+      - google/embeddinggemma-2
+      - --output
+      - index
+      - --batch-size
+      - "8"

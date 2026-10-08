@@ -1,0 +1,15 @@
+.git
+.github
+.venv
+.cache
+.pytest_cache
+__pycache__
+*.py[cod]
+.DS_Store
+source
+data/youtube
+data/audio-cache
+data/chunks.jsonl
+data/chunks.provenance.json
+index*
+models

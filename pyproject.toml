@@ -1,25 +1,51 @@
 [project]
 name = "ai-that-works-search"
 version = "0.1.0"
-description = "Local semantic search across AI That Works transcripts, notes, and diagrams"
-requires-python = ">=3.11"
+description = "Local semantic search and grounded RAG across AI That Works episodes"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11,<3.14"
 dependencies = [
   "huggingface-hub>=0.35",
+  "httpx>=0.28",
+  "markdown-it-py>=4.0",
   "numpy>=2.0",
   "pillow>=11.0",
   "sentence-transformers>=5.1",
+  "torch>=2.9",
   "torchvision>=0.24",
   "youtube-transcript-api>=1.2",
 ]
 
-[project.scripts]
-aitw-search = "aitw_search.search:main"
-aitw-rag = "aitw_search.rag:main"
-aitw-build = "aitw_search.build_index:main"
+[dependency-groups]
+dev = [
+  "bandit>=1.8",
+  "pytest>=9",
+  "ruff>=0.14",
+]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+[tool.uv]
+package = false
 
-[tool.hatch.build.targets.wheel]
-packages = ["src/aitw_search"]
+# Avoid pulling CUDA runtime wheels into the CPU-only Docker image while keeping
+# native PyPI wheels on macOS. `uv lock` records both platform branches.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+norecursedirs = ["source", ".venv", "index*"]

@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """Build a union manifest from the YouTube show and repository episode metadata."""
+
 from __future__ import annotations
 
 import argparse
 import json
 import re
-from difflib import SequenceMatcher
 from pathlib import Path
+
+from _shared import require_youtube_video_id, safe_child_path
 
 VIDEO_RE = re.compile(r"(?:v=|youtu\.be/)([A-Za-z0-9_-]{11})")
 TEXT_SUFFIXES = {".md", ".txt"}
@@ -23,6 +25,25 @@ SHOW_FOLDER_OVERRIDES = {
 }
 
 
+def validate_mapping_invariants(manifest: list[dict], show_ids: set[str]) -> None:
+    guids = [item["guid"] for item in manifest]
+    if len(guids) != len(set(guids)):
+        raise SystemExit("manifest contains duplicate episode GUIDs")
+    video_ids = [item["youtube_id"] for item in manifest if item.get("youtube_id")]
+    if len(video_ids) != len(set(video_ids)):
+        raise SystemExit("manifest contains duplicate YouTube video ownership")
+    unknown_overrides = (set(VIDEO_OVERRIDES.values()) | set(SHOW_FOLDER_OVERRIDES)) - show_ids
+    if unknown_overrides:
+        raise SystemExit(f"mapping overrides are absent from the show snapshot: {sorted(unknown_overrides)}")
+    folder_owners: dict[str, list[str]] = {}
+    for item in manifest:
+        if item.get("repository_folder"):
+            folder_owners.setdefault(item["repository_folder"], []).append(item["guid"])
+    for folder, owners in folder_owners.items():
+        if len(owners) > 1 and sum(guid.startswith("aitw-") for guid in owners) != 1:
+            raise SystemExit(f"ambiguous canonical repository-folder ownership for {folder}: {sorted(owners)}")
+
+
 def video_id(url: str | None) -> str | None:
     if not url:
         return None
@@ -30,22 +51,18 @@ def video_id(url: str | None) -> str | None:
     return match.group(1) if match else None
 
 
-def normalize_title(title: str) -> str:
-    title = re.sub(r"(?i)\b(s\d+e\d+|episode|ep|ai that works|no vibes allowed)\b", " ", title)
-    title = re.sub(r"[^a-z0-9]+", " ", title.lower())
-    return " ".join(title.split())
-
-
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", type=Path, default=Path("source/ai-that-works"))
     parser.add_argument("--youtube", type=Path, default=Path("youtube_show.json"))
     parser.add_argument("--output", type=Path, default=Path("data/episodes.json"))
+
     args = parser.parse_args()
 
-    repository = json.loads((args.repo / "data.json").read_text())["episodes"]
+    repo_root = args.repo.resolve()
+    repository = json.loads((repo_root / "data.json").read_text())["episodes"]
     show_entries = json.loads(args.youtube.read_text()).get("entries", [])
-    show = {entry["id"]: entry for entry in show_entries}
+    show = {require_youtube_video_id(entry["id"]): entry for entry in show_entries}
     manifest = []
     mapped_ids: set[str] = set()
 
@@ -56,27 +73,20 @@ def main() -> int:
         media = episode.get("media") or {}
         vid = VIDEO_OVERRIDES.get(episode.get("guid")) or video_id(links.get("youtube")) or video_id(media.get("url"))
         mapping_note = "manual title/topic match" if episode.get("guid") in VIDEO_OVERRIDES else "repository metadata"
-        if vid is None and episode.get("isPast"):
-            target = normalize_title(episode["title"])
-            candidates = sorted(
-                (
-                    (SequenceMatcher(None, target, normalize_title(item.get("title", ""))).ratio(), item)
-                    for item in show_entries
-                    if item["id"] not in mapped_ids
-                ),
-                reverse=True,
-                key=lambda pair: pair[0],
-            )
-            if candidates and candidates[0][0] >= 0.62:
-                vid = candidates[0][1]["id"]
-                mapping_note = f"fuzzy title match ({candidates[0][0]:.3f})"
+        if vid:
+            vid = require_youtube_video_id(vid)
         folder_name = episode.get("folder")
-        folder = args.repo / folder_name if folder_name else None
+        folder = safe_child_path(repo_root, folder_name) if folder_name else None
         files = [path for path in folder.rglob("*") if path.is_file()] if folder and folder.exists() else []
-        relative_files = [str(path.relative_to(args.repo)) for path in files]
-        transcript_files = [path for path in relative_files if "transcript" in Path(path).name.lower() or "trasncript" in Path(path).name.lower()]
+        relative_files = [str(path.relative_to(repo_root)) for path in files]
+        transcript_files = [
+            path
+            for path in relative_files
+            if "transcript" in Path(path).name.lower() or "trasncript" in Path(path).name.lower()
+        ]
         note_files = [
-            path for path in relative_files
+            path
+            for path in relative_files
             if Path(path).suffix.lower() in TEXT_SUFFIXES
             and path not in transcript_files
             and (Path(path).parent == Path(folder_name) or "/thoughts/" in f"/{path}")
@@ -87,7 +97,6 @@ def main() -> int:
             "season": episode.get("season"),
             "episode": episode.get("episode"),
             "title": episode.get("title"),
-            "description": episode.get("description", "").strip(),
             "event_date": episode.get("eventDate"),
             "is_past": episode.get("isPast"),
             "repository_folder": folder_name,
@@ -106,44 +115,62 @@ def main() -> int:
 
     # Preserve every video from the user's show URL, even when the repository has no matching entry.
     for order, entry in enumerate(show_entries, 1):
-        if entry["id"] in mapped_ids:
+        entry_id = require_youtube_video_id(entry["id"])
+        if entry_id in mapped_ids:
             continue
-        folder_name = SHOW_FOLDER_OVERRIDES.get(entry["id"])
-        folder = args.repo / folder_name if folder_name else None
+        folder_name = SHOW_FOLDER_OVERRIDES.get(entry_id)
+        folder = safe_child_path(repo_root, folder_name) if folder_name else None
         files = [path for path in folder.rglob("*") if path.is_file()] if folder and folder.exists() else []
-        relative_files = [str(path.relative_to(args.repo)) for path in files]
-        transcript_files = [path for path in relative_files if "transcript" in Path(path).name.lower() or "trasncript" in Path(path).name.lower()]
-        note_files = [
-            path for path in relative_files
-            if Path(path).suffix.lower() in TEXT_SUFFIXES
-            and path not in transcript_files
-            and (Path(path).parent == Path(folder_name) or "/thoughts/" in f"/{path}")
-        ] if folder_name else []
+        relative_files = [str(path.relative_to(repo_root)) for path in files]
+        transcript_files = [
+            path
+            for path in relative_files
+            if "transcript" in Path(path).name.lower() or "trasncript" in Path(path).name.lower()
+        ]
+        note_files = (
+            [
+                path
+                for path in relative_files
+                if Path(path).suffix.lower() in TEXT_SUFFIXES
+                and path not in transcript_files
+                and (Path(path).parent == Path(folder_name) or "/thoughts/" in f"/{path}")
+            ]
+            if folder_name
+            else []
+        )
         image_files = [path for path in relative_files if Path(path).suffix.lower() in IMAGE_SUFFIXES]
-        manifest.append({
-            "guid": f"youtube-{entry['id']}",
-            "season": None,
-            "episode": None,
-            "title": entry.get("title"),
-            "description": "",
-            "event_date": None,
-            "is_past": True,
-            "repository_folder": folder_name,
-            "repository_url": f"https://github.com/ai-that-works/ai-that-works/tree/main/{folder_name}" if folder_name else None,
-            "youtube_id": entry["id"],
-            "youtube_url": entry.get("url") or f"https://www.youtube.com/watch?v={entry['id']}",
-            "in_youtube_show": True,
-            "youtube_show_order": order,
-            "mapping_note": "Inferred companion Part 1 repository mapping" if folder_name else "YouTube show entry without repository mapping",
-            "repo_transcripts": sorted(transcript_files),
-            "repo_notes": sorted(note_files),
-            "repo_images": sorted(image_files),
-        })
+        manifest.append(
+            {
+                "guid": f"youtube-{entry_id}",
+                "season": None,
+                "episode": None,
+                "title": entry.get("title"),
+                "event_date": None,
+                "is_past": True,
+                "repository_folder": folder_name,
+                "repository_url": f"https://github.com/ai-that-works/ai-that-works/tree/main/{folder_name}"
+                if folder_name
+                else None,
+                "youtube_id": entry_id,
+                "youtube_url": entry.get("url") or f"https://www.youtube.com/watch?v={entry_id}",
+                "in_youtube_show": True,
+                "youtube_show_order": order,
+                "mapping_note": "Inferred companion Part 1 repository mapping"
+                if folder_name
+                else "YouTube show entry without repository mapping",
+                "repo_transcripts": sorted(transcript_files),
+                "repo_notes": sorted(note_files),
+                "repo_images": sorted(image_files),
+            }
+        )
 
     manifest.sort(key=lambda item: (item.get("event_date") or "", item.get("guid") or ""))
+    validate_mapping_invariants(manifest, set(show))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps({"episodes": manifest}, indent=2, ensure_ascii=False) + "\n")
-    print(f"episodes={len(manifest)} youtube={sum(bool(item['youtube_id']) for item in manifest)} repo={sum(bool(item['repository_folder']) for item in manifest)}")
+    youtube_count = sum(bool(item["youtube_id"]) for item in manifest)
+    repo_count = sum(bool(item["repository_folder"]) for item in manifest)
+    print(f"episodes={len(manifest)} youtube={youtube_count} repo={repo_count}")
     return 0
 
 

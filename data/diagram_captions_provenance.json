@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "caption_file": "data/diagram_captions.json",
+  "created_at": "2026-10-08",
+  "method": "AI-assisted visual summaries created during project development",
+  "review_status": "Per-caption human review was not recorded",
+  "rights_note": "Captions are original descriptive text; underlying images remain third-party content and are not redistributed here"
+}

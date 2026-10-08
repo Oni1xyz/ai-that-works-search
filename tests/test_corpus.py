@@ -5,7 +5,7 @@ def test_chunk_text_is_bounded_and_overlapping():
     text = "\n\n".join(["alpha " * 80, "beta " * 80, "gamma " * 80])
     chunks = chunk_text(text, max_chars=500, overlap_chars=50)
     assert len(chunks) >= 3
-    assert all(len(chunk) <= 600 for chunk in chunks)
+    assert all(len(chunk) <= 500 for chunk in chunks)
     assert any("alpha" in chunk for chunk in chunks)
     assert any("gamma" in chunk for chunk in chunks)
 
@@ -20,6 +20,24 @@ def test_transcript_chunks_preserve_time_ranges():
     assert chunks[0]["start_s"] == 0.0
     assert chunks[-1]["end_s"] == 6.0
     assert "third phrase" in chunks[-1]["text"]
+
+
+def test_chunk_text_never_exceeds_limit_for_long_unbroken_input():
+    chunks = chunk_text("x" * 7000, max_chars=3200, overlap_chars=350)
+    assert len(chunks) >= 3
+    assert all(len(chunk) <= 3200 for chunk in chunks)
+
+
+def test_transcript_chunks_split_oversized_segment():
+    chunks = transcript_chunks(
+        {"segments": [{"start": 10.0, "duration": 8.0, "text": "word " * 1000}]},
+        max_chars=500,
+        overlap_chars=50,
+    )
+    assert len(chunks) > 1
+    assert all(len(chunk["text"]) <= 500 for chunk in chunks)
+    assert chunks[0]["start_s"] == 10.0
+    assert chunks[-1]["end_s"] == 18.0
 
 
 def test_chunk_id_is_deterministic():
