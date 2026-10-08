@@ -1,0 +1,1981 @@
+{
+  "episodes": [
+    {
+      "guid": "youtube-8wQBvT6L8Xk",
+      "season": null,
+      "episode": null,
+      "title": "Planning is dead: Recursive order-n planning",
+      "description": "",
+      "event_date": null,
+      "is_past": true,
+      "repository_folder": null,
+      "repository_url": null,
+      "youtube_id": "8wQBvT6L8Xk",
+      "youtube_url": "https://www.youtube.com/watch?v=8wQBvT6L8Xk",
+      "in_youtube_show": true,
+      "youtube_show_order": 72,
+      "mapping_note": "YouTube show entry without repository mapping",
+      "repo_transcripts": [],
+      "repo_notes": [],
+      "repo_images": []
+    },
+    {
+      "guid": "youtube-SHxRxkjkP80",
+      "season": null,
+      "episode": null,
+      "title": "The 1995 Programming Language That Already Invented AI Agents",
+      "description": "",
+      "event_date": null,
+      "is_past": true,
+      "repository_folder": null,
+      "repository_url": null,
+      "youtube_id": "SHxRxkjkP80",
+      "youtube_url": "https://www.youtube.com/watch?v=SHxRxkjkP80",
+      "in_youtube_show": true,
+      "youtube_show_order": 71,
+      "mapping_note": "YouTube show entry without repository mapping",
+      "repo_transcripts": [],
+      "repo_notes": [],
+      "repo_images": []
+    },
+    {
+      "guid": "youtube-Z9nwmtHUggY",
+      "season": null,
+      "episode": null,
+      "title": "Save 20-50% on agent tool call cost and latency",
+      "description": "",
+      "event_date": null,
+      "is_past": true,
+      "repository_folder": null,
+      "repository_url": null,
+      "youtube_id": "Z9nwmtHUggY",
+      "youtube_url": "https://www.youtube.com/watch?v=Z9nwmtHUggY",
+      "in_youtube_show": true,
+      "youtube_show_order": 79,
+      "mapping_note": "YouTube show entry without repository mapping",
+      "repo_transcripts": [],
+      "repo_notes": [],
+      "repo_images": []
+    },
+    {
+      "guid": "youtube-rQm-kX4ePt8",
+      "season": null,
+      "episode": null,
+      "title": "Web-scraping + Extraction AI demo",
+      "description": "",
+      "event_date": null,
+      "is_past": true,
+      "repository_folder": null,
+      "repository_url": null,
+      "youtube_id": "rQm-kX4ePt8",
+      "youtube_url": "https://www.youtube.com/watch?v=rQm-kX4ePt8",
+      "in_youtube_show": true,
+      "youtube_show_order": 77,
+      "mapping_note": "YouTube show entry without repository mapping",
+      "repo_transcripts": [],
+      "repo_notes": [],
+      "repo_images": []
+    },
+    {
+      "guid": "youtube-sqJrl09dDmI",
+      "season": null,
+      "episode": null,
+      "title": "🦄 ai that works: PDFs, Multimodality, Vision Models: Part 1",
+      "description": "",
+      "event_date": null,
+      "is_past": true,
+      "repository_folder": null,
+      "repository_url": null,
+      "youtube_id": "sqJrl09dDmI",
+      "youtube_url": "https://www.youtube.com/watch?v=sqJrl09dDmI",
+      "in_youtube_show": true,
+      "youtube_show_order": 65,
+      "mapping_note": "YouTube show entry without repository mapping",
+      "repo_transcripts": [],
+      "repo_notes": [],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-001",
+      "season": 1,
+      "episode": 1,
+      "title": "S01E01 – Large Scale Classification",
+      "description": "LLMs are great at classification from 5, 10, maybe even 50 categories. But how do we deal with situations when we have over 1000? Perhaps it's an ever changing list of categories?",
+      "event_date": "2025-03-31T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-03-31-large-scale-classification",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-03-31-large-scale-classification",
+      "youtube_id": "6B7MzraQMZk",
+      "youtube_url": "https://www.youtube.com/watch?v=6B7MzraQMZk",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-03-31-large-scale-classification/README.md",
+        "2025-03-31-large-scale-classification/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-002",
+      "season": 1,
+      "episode": 2,
+      "title": "S01E02 – Reasoning Models vs Reasoning Prompts",
+      "description": "Models can reason but you can also reason within a prompt. Which technique wins out when and why? We'll find out by adding reasoning to an existing movie chat agent.",
+      "event_date": "2025-04-08T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-04-07-reasoning-models-vs-prompts",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-04-07-reasoning-models-vs-prompts",
+      "youtube_id": "D-pcKduKdYM",
+      "youtube_url": "https://www.youtube.com/watch?v=D-pcKduKdYM",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-04-07-reasoning-models-vs-prompts/README.md",
+        "2025-04-07-reasoning-models-vs-prompts/meta.md"
+      ],
+      "repo_images": [
+        "2025-04-07-reasoning-models-vs-prompts/public/file.svg",
+        "2025-04-07-reasoning-models-vs-prompts/public/globe.svg",
+        "2025-04-07-reasoning-models-vs-prompts/public/next.svg",
+        "2025-04-07-reasoning-models-vs-prompts/public/vercel.svg",
+        "2025-04-07-reasoning-models-vs-prompts/public/window.svg"
+      ]
+    },
+    {
+      "guid": "aitw-003",
+      "season": 1,
+      "episode": 3,
+      "title": "S01E03 – Code Generation with Small Models",
+      "description": "Large models can do a lot, but so can small models. We'll discuss techniques for how to leverage extremely small models for generating diffs and making changes in complete codebases.",
+      "event_date": "2025-04-15T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-04-15-code-generation-small-models",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-04-15-code-generation-small-models",
+      "youtube_id": "KJkvYdGEnAY",
+      "youtube_url": "https://www.youtube.com/watch?v=KJkvYdGEnAY",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-04-15-code-generation-small-models/README.md",
+        "2025-04-15-code-generation-small-models/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-004",
+      "season": 1,
+      "episode": 4,
+      "title": "S01E04 – Twelve Factor Agents",
+      "description": "Learn how to build production-ready AI agents using the twelve-factor methodology. We'll cover the core concepts and build a real agent from scratch.",
+      "event_date": "2025-04-22T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-04-22-twelve-factor-agents",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-04-22-twelve-factor-agents",
+      "youtube_id": "yxJDyQ8v6P0",
+      "youtube_url": "https://www.youtube.com/watch?v=yxJDyQ8v6P0",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-04-22-twelve-factor-agents/README.md",
+        "2025-04-22-twelve-factor-agents/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-005",
+      "season": 2,
+      "episode": 1,
+      "title": "S02E01 – Designing Evals",
+      "description": "Minimalist and high-performance testing/evals for LLM applications. Stay tuned for our season 2 kickoff topic on testing and evaluation strategies.",
+      "event_date": "2025-05-13T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-05-13-designing-evals",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-05-13-designing-evals",
+      "youtube_id": "-N6MajRfqYw",
+      "youtube_url": "https://www.youtube.com/watch?v=-N6MajRfqYw",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-05-13-designing-evals/README.md",
+        "2025-05-13-designing-evals/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-006",
+      "season": 2,
+      "episode": 2,
+      "title": "S02E02 – Policy to Prompt: Evaluating w/ the Enron Emails Dataset",
+      "description": "One of the most common problems in AI engineering is looking at a set of policies/rules and evaluating evidence to determine if the rules were followed. In this session we'll explore turning policies into prompts and pipelines to evaluate which emails in the massive Enron email dataset violated SEC and Sarbanes-Oxley regulations.",
+      "event_date": "2025-05-20T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-05-20-policies-to-prompts",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-05-20-policies-to-prompts",
+      "youtube_id": "gkekVC67iVs",
+      "youtube_url": "https://www.youtube.com/watch?v=gkekVC67iVs",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-05-20-policies-to-prompts/README.md",
+        "2025-05-20-policies-to-prompts/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-007",
+      "season": 2,
+      "episode": 3,
+      "title": "S02E03 – 12-factor agents: selecting from thousands of MCP tools",
+      "description": "MCP is only as great as your ability to pick the right tools. We'll dive into showing how to leverage MCP servers and accurately use the right ones when only a few have actually relevant tools.",
+      "event_date": "2025-05-27T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-05-27-mcp-with-10000-tools",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-05-27-mcp-with-10000-tools",
+      "youtube_id": "P5wRLKF4bt8",
+      "youtube_url": "https://www.youtube.com/watch?v=P5wRLKF4bt8",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-05-27-mcp-with-10000-tools/README.md",
+        "2025-05-27-mcp-with-10000-tools/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-008",
+      "season": 2,
+      "episode": 4,
+      "title": "S02E04 – Humans as Tools: Async Agents and Durable Execution",
+      "description": "Agents are great, but for the most accuracy-sensitive scenarios, we some times want a human in the loop. Today we'll discuss techniques for how to make this possible. We'll dive deep into concepts from our 4/22 session on 12-factor agents and extend them to handle asynchronous operations where agents need to contact humans for help, feedback, or approvals across a variety of channels.",
+      "event_date": "2025-06-03T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-06-03-humans-as-tools-async",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-06-03-humans-as-tools-async",
+      "youtube_id": "NMhH5_ju3-I",
+      "youtube_url": "https://www.youtube.com/watch?v=NMhH5_ju3-I",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-06-03-humans-as-tools-async/README.md",
+        "2025-06-03-humans-as-tools-async/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-009",
+      "season": 2,
+      "episode": 5,
+      "title": "S02E05 – Cracking the Prompting Interview",
+      "description": "Ready to level up your prompting skills? Join us for a deep dive into advanced prompting techniques that separate good prompt engineers from great ones. We'll cover systematic prompt design, testing tools / inner loops, and tackle real-world prompting challenges. Perfect prep for becoming a more effective AI engineer.",
+      "event_date": "2025-06-10T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-06-10-cracking-the-prompting-interview",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-06-10-cracking-the-prompting-interview",
+      "youtube_id": "PU2h0V-pANQ",
+      "youtube_url": "https://www.youtube.com/watch?v=PU2h0V-pANQ",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-06-10-cracking-the-prompting-interview/README.md",
+        "2025-06-10-cracking-the-prompting-interview/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-010",
+      "season": 2,
+      "episode": 6,
+      "title": "S02E06 – Entity Resolution: Extraction, Deduping, and Enriching",
+      "description": "Disambiguating many ways of naming the same thing (companies, skills, etc.) - from entity extraction to resolution to deduping. We'll explore breaking problems into extraction → resolution → enrichment stages, scaling with two-stage designs, and building async workflows with human-in-loop patterns for production entity resolution systems.",
+      "event_date": "2025-06-17T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-06-17-entity-extraction",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-06-17-entity-extraction",
+      "youtube_id": "niR896pQWOQ",
+      "youtube_url": "https://www.youtube.com/watch?v=niR896pQWOQ",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-06-17-entity-extraction/README.md",
+        "2025-06-17-entity-extraction/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-011",
+      "season": 2,
+      "episode": 7,
+      "title": "S02E07 – Building an AI Content Pipeline",
+      "description": "Content creation involves a lot of manual work - uploading videos, sending emails, and other follow-up tasks that are easy to drop. We'll build an agent that integrates YouTube, email, GitHub and human-in-the-loop to fully automate the AI that Works content pipeline, handling all the repetitive work while maintaining quality.",
+      "event_date": "2025-06-24T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-06-24-ai-content-pipeline",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-06-24-ai-content-pipeline",
+      "youtube_id": "Xece-W7Xf48",
+      "youtube_url": "https://www.youtube.com/watch?v=Xece-W7Xf48",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2025-06-24-ai-content-pipeline/frontend/src/components/TranscriptViewer.tsx",
+        "2025-06-24-ai-content-pipeline/frontend/src/components/video/transcript-viewer.tsx"
+      ],
+      "repo_notes": [
+        "2025-06-24-ai-content-pipeline/CLAUDE.md",
+        "2025-06-24-ai-content-pipeline/README.md",
+        "2025-06-24-ai-content-pipeline/meta.md"
+      ],
+      "repo_images": [
+        "2025-06-24-ai-content-pipeline/frontend/public/file.svg",
+        "2025-06-24-ai-content-pipeline/frontend/public/globe.svg",
+        "2025-06-24-ai-content-pipeline/frontend/public/next.svg",
+        "2025-06-24-ai-content-pipeline/frontend/public/vercel.svg",
+        "2025-06-24-ai-content-pipeline/frontend/public/window.svg"
+      ]
+    },
+    {
+      "guid": "aitw-012",
+      "season": 2,
+      "episode": 8,
+      "title": "S02E08 – Boosting AI Output Quality",
+      "description": "This week's session was a bit meta! We explored 'Boosting AI Output Quality' by building the very AI pipeline that generated this email from our Zoom recording. The real breakthrough: separating extraction from polishing for high-quality AI generation.",
+      "event_date": "2025-07-01T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-07-01-ai-content-pipeline-2",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-07-01-ai-content-pipeline-2",
+      "youtube_id": "HsElHU44xJ0",
+      "youtube_url": "https://www.youtube.com/watch?v=HsElHU44xJ0",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2025-07-01-ai-content-pipeline-2/frontend/src/components/TranscriptViewer.tsx",
+        "2025-07-01-ai-content-pipeline-2/frontend/src/components/video/transcript-viewer.tsx"
+      ],
+      "repo_notes": [
+        "2025-07-01-ai-content-pipeline-2/CLAUDE.md",
+        "2025-07-01-ai-content-pipeline-2/README.md",
+        "2025-07-01-ai-content-pipeline-2/architecture.md",
+        "2025-07-01-ai-content-pipeline-2/cursed.md",
+        "2025-07-01-ai-content-pipeline-2/meta.md",
+        "2025-07-01-ai-content-pipeline-2/recap-and-next.md"
+      ],
+      "repo_images": [
+        "2025-07-01-ai-content-pipeline-2/frontend/public/file.svg",
+        "2025-07-01-ai-content-pipeline-2/frontend/public/globe.svg",
+        "2025-07-01-ai-content-pipeline-2/frontend/public/next.svg",
+        "2025-07-01-ai-content-pipeline-2/frontend/public/vercel.svg",
+        "2025-07-01-ai-content-pipeline-2/frontend/public/window.svg"
+      ]
+    },
+    {
+      "guid": "aitw-013",
+      "season": 2,
+      "episode": 9,
+      "title": "S02E09 – Building AI with Memory & Context",
+      "description": "How do we build agents that can remember past conversations and learn over time? We'll explore memory and context engineering techniques to create AI systems that maintain state across interactions.",
+      "event_date": "2025-07-08T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-07-08-context-engineering",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-07-08-context-engineering",
+      "youtube_id": "-doV02eh8XI",
+      "youtube_url": "https://www.youtube.com/watch?v=-doV02eh8XI",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-07-08-context-engineering/README.md",
+        "2025-07-08-context-engineering/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-014",
+      "season": 2,
+      "episode": 10,
+      "title": "S02E10 – Implementing Decaying-Resolution Memory",
+      "description": "Last week on #13, we did a conceptual deep dive on context engineering and memory - this week, we're going to jump right into the weeds and implement a version of Decaying-Resolution Memory that you can pick up and apply to your AI Agents today. For this episode, you'll probably want to check out episode #13 in the session listing to get caught up on DRM and why its worth building from scratch.",
+      "event_date": "2025-07-15T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-07-15-decaying-resolution-memory",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-07-15-decaying-resolution-memory",
+      "youtube_id": "CEGSDlCtI8U",
+      "youtube_url": "https://www.youtube.com/watch?v=CEGSDlCtI8U",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-07-15-decaying-resolution-memory/README.md",
+        "2025-07-15-decaying-resolution-memory/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-015",
+      "season": 2,
+      "episode": 11,
+      "title": "S02E11 – PDFs, Multimodality, Vision Models",
+      "description": "Dive deep into practical PDF processing techniques for AI applications. We'll explore how to extract, parse, and leverage PDF content effectively in your AI workflows, tackling common challenges like layout preservation, table extraction, and multi-modal content handling.",
+      "event_date": "2025-07-22T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-07-22-multimodality",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-07-22-multimodality",
+      "youtube_id": "sCScFZB4Am8",
+      "youtube_url": "https://www.youtube.com/watch?v=sCScFZB4Am8",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-07-22-multimodality/README.md",
+        "2025-07-22-multimodality/meta.md",
+        "2025-07-22-multimodality/socials.md"
+      ],
+      "repo_images": [
+        "2025-07-22-multimodality/data/page_0.png",
+        "2025-07-22-multimodality/data/page_1.png",
+        "2025-07-22-multimodality/data/page_2.png",
+        "2025-07-22-multimodality/data/page_3.png",
+        "2025-07-22-multimodality/data/page_4.png",
+        "2025-07-22-multimodality/data/same/boxed_common_1_2.png",
+        "2025-07-22-multimodality/data/same/boxed_common_1_3.png",
+        "2025-07-22-multimodality/data/same/boxed_common_1_4.png",
+        "2025-07-22-multimodality/data/same/exact_same_1_2.png",
+        "2025-07-22-multimodality/data/same/exact_same_1_3.png",
+        "2025-07-22-multimodality/data/same/exact_same_1_4.png",
+        "2025-07-22-multimodality/data/same/mask_same_1_2.png",
+        "2025-07-22-multimodality/data/same/mask_same_1_3.png",
+        "2025-07-22-multimodality/data/same/mask_same_1_4.png"
+      ]
+    },
+    {
+      "guid": "aitw-016",
+      "season": 2,
+      "episode": 12,
+      "title": "S02E12 – Evaluating Prompts Across Models",
+      "description": "AI That Works #16 will be a super-practical deep dive into real-world examples and techniques for evaluating a single prompt against multiple models. While this is a commonly heralded use case for Evals, e.g. 'how do we know if the new model is better' / 'how do we know if the new model breaks anything', there's not a ton of practical examples out there for real-world use cases.",
+      "event_date": "2025-07-29T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-07-29-eval-many-models-same-prompt",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-07-29-eval-many-models-same-prompt",
+      "youtube_id": "OawyQOrlubM",
+      "youtube_url": "https://www.youtube.com/watch?v=OawyQOrlubM",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-07-29-eval-many-models-same-prompt/README.md",
+        "2025-07-29-eval-many-models-same-prompt/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-017",
+      "season": 2,
+      "episode": 13,
+      "title": "S02E13 – Context Engineering for Coding Agents",
+      "description": "By popular demand, AI That Works #17 will dive deep on a new kind of context engineering: managing research, specs, and planning to get the most of coding agents and coding CLIs. You've heard people bragging about spending thousands/mo on Claude Code, maxing out Amp limits, and much more. Now Dex and Vaibhav are gonna share some tips and tricks for pushing AI coding tools to their absolute limits, while still shipping well-tested, bug-free code. This isn't vibe-coding, this is something completely different.",
+      "event_date": "2025-08-05T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-08-05-advanced-context-engineering-for-coding-agents",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-08-05-advanced-context-engineering-for-coding-agents",
+      "youtube_id": "42AzKZRNhsk",
+      "youtube_url": "https://www.youtube.com/watch?v=42AzKZRNhsk",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-08-05-advanced-context-engineering-for-coding-agents/CLAUDE.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/README.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/email.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/journal.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/meta.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/socials.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/thoughts/shared/issues/issue-1252.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/thoughts/shared/plans/baml-test-assertion-validation-with-research.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/thoughts/shared/plans/fix-assert-syntax-validation-no-research.md",
+        "2025-08-05-advanced-context-engineering-for-coding-agents/thoughts/shared/research/2025-08-05_05-15-59_baml_test_assertions.md"
+      ],
+      "repo_images": [
+        "2025-08-05-advanced-context-engineering-for-coding-agents/thoughts/shared/images/issue-1252-image.png"
+      ]
+    },
+    {
+      "guid": "aitw-018",
+      "season": 2,
+      "episode": 14,
+      "title": "S02E14 – Decoding Context Engineering Lessons from Manus",
+      "description": "A few weeks ago, the Manus team published an excellent paper on context engineering. It covered KV Cache, Hot-swapping tools with custom samplers, and a ton of other cool techniques. On this week's episode, we'll dive deep on the manus Article and put some of the advice into practice, exploring how a deep understanding of models and inference can help you to get the most out of today's LLMs.",
+      "event_date": "2025-08-12T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-08-12-manus-context-engineering",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-08-12-manus-context-engineering",
+      "youtube_id": "OaUOHEHtlOU",
+      "youtube_url": "https://www.youtube.com/watch?v=OaUOHEHtlOU",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-08-12-manus-context-engineering/README.md",
+        "2025-08-12-manus-context-engineering/email.md",
+        "2025-08-12-manus-context-engineering/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-019",
+      "season": 2,
+      "episode": 15,
+      "title": "S02E15 – Interruptible Agents",
+      "description": "Anyone can build a chatbot, but the user experience is what truly sets it apart. Can you cancel a message? Can you queue commands while it's busy? How finely can you steer the agent? We'll explore these questions and code a solution together.",
+      "event_date": "2025-08-19T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-08-19-interruptible-agents",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-08-19-interruptible-agents",
+      "youtube_id": "2ivXNdHJpxk",
+      "youtube_url": "https://www.youtube.com/watch?v=2ivXNdHJpxk",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-08-19-interruptible-agents/README.md",
+        "2025-08-19-interruptible-agents/email.md",
+        "2025-08-19-interruptible-agents/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-020",
+      "season": 2,
+      "episode": 16,
+      "title": "Claude for Non-Code Tasks",
+      "description": "On #17 we talked about advanced context engineering workflows for using Claude code to work in complex codebases. This week, we're gonna get a little weird with it, and show off a bunch of ways you can use Claude Code as a generic agent to handle non-coding tasks. We'll learn things like: Skipping the MCP and having claude write its own scripts to interact with external systems, Creating internal knowledge graphs with markdown files, How to blend agentic retrieval and search with deterministic context packing",
+      "event_date": "2025-08-26T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-08-26-claude-for-non-code-workflows",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-08-26-claude-for-non-code-workflows",
+      "youtube_id": "NJcph4j9sNg",
+      "youtube_url": "https://www.youtube.com/watch?v=NJcph4j9sNg",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-08-26-claude-for-non-code-workflows/COMPANY.md",
+        "2025-08-26-claude-for-non-code-workflows/README.md",
+        "2025-08-26-claude-for-non-code-workflows/email.md",
+        "2025-08-26-claude-for-non-code-workflows/meta.md",
+        "2025-08-26-claude-for-non-code-workflows/running_investor_updates.md",
+        "2025-08-26-claude-for-non-code-workflows/thoughts/shared/research/2025-08-26_09-29-35_humanlayer-self-structure.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-021",
+      "season": 2,
+      "episode": 21,
+      "title": "Voice Agents and Supervisor Threading",
+      "description": "Exploring voice-based AI agents and supervisor threading patterns for managing complex conversational workflows.",
+      "event_date": "2025-09-02T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-09-02-voice-agent-supervisor-threading",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-09-02-voice-agents-supervisor-threading",
+      "youtube_id": "UCqD_KUyUJA",
+      "youtube_url": "https://www.youtube.com/watch?v=UCqD_KUyUJA",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-09-02-voice-agent-supervisor-threading/CLAUDE.md",
+        "2025-09-02-voice-agent-supervisor-threading/README.md",
+        "2025-09-02-voice-agent-supervisor-threading/deep-research.md",
+        "2025-09-02-voice-agent-supervisor-threading/email.md",
+        "2025-09-02-voice-agent-supervisor-threading/meta.md",
+        "2025-09-02-voice-agent-supervisor-threading/specification_updates.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-022",
+      "season": 2,
+      "episode": 22,
+      "title": "Generative UIs and Structured Streaming",
+      "description": "We'll explore hard problems in building rich UIs that rely on streaming data from LLMs. ​Specifically, we'll talk through techniques for rendering **STRUCTURED** outputs from LLMs, with real-world examples of how to handle partially-streamed outputs over incomplete JSON data. We'll explore advanced needs like * Fields that should be required for stream to start * ​Rendering React Components with partial data ​* Handling nullable fields vs. yet-to-be-streamed fields * ​Building high-quality User feedback * ​Handling errors mid-stream",
+      "event_date": "2025-09-09T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-09-09-generative-uis",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-09-09-generative-uis",
+      "youtube_id": "RX8D5oJrV9k",
+      "youtube_url": "https://www.youtube.com/watch?v=RX8D5oJrV9k",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-09-09-generative-uis/README.md",
+        "2025-09-09-generative-uis/email.md",
+        "2025-09-09-generative-uis/meta.md"
+      ],
+      "repo_images": [
+        "2025-09-09-generative-uis/my-app/public/file.svg",
+        "2025-09-09-generative-uis/my-app/public/globe.svg",
+        "2025-09-09-generative-uis/my-app/public/next.svg",
+        "2025-09-09-generative-uis/my-app/public/vercel.svg",
+        "2025-09-09-generative-uis/my-app/public/window.svg"
+      ]
+    },
+    {
+      "guid": "aitw-023",
+      "season": 2,
+      "episode": 23,
+      "title": "Bash vs. MCP - token efficient coding agent tooling",
+      "description": "In this conversation, Dex and Vaibhav delve into the intricacies of coding agents, focusing on the debate between using MCP (Model Control Protocol) and Bash for tool integration. They explore the importance of understanding context windows, token management, and the efficiency of using different tools. The discussion emphasizes the significance of naming conventions, dynamic context engineering, and the engineering efforts required to optimize performance. They also share real-world applications, best practices for using MCPs, and engage with the community through a Q&A session.",
+      "event_date": "2025-09-16T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-09-16-coding-agent-tools-bash-vs-mcp",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-09-16-coding-agent-tools-bash-vs-mcp",
+      "youtube_id": "RtXpXIY4sLk",
+      "youtube_url": "https://www.youtube.com/watch?v=RtXpXIY4sLk",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-09-16-coding-agent-tools-bash-vs-mcp/CLAUDE.md",
+        "2025-09-16-coding-agent-tools-bash-vs-mcp/CLAUDE_linear_cli.md",
+        "2025-09-16-coding-agent-tools-bash-vs-mcp/CLAUDE_linear_mcp.md",
+        "2025-09-16-coding-agent-tools-bash-vs-mcp/README.md",
+        "2025-09-16-coding-agent-tools-bash-vs-mcp/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-024",
+      "season": 2,
+      "episode": 24,
+      "title": "Evals for Classification",
+      "description": "In this episode of AI That Works, hosts Vaibhav Gupta and Dex, along with guest Kevin Gregory, explore the intricacies of building AI systems that are ready for production. They discuss the concept of dynamic UIs, the challenges of large-scale classification, and the importance of user experience in AI applications. The conversation delves into the use of LLMs for enhancing classification systems, the evaluation and tuning of these systems, and the subjective nature of what constitutes a 'correct' classification. The episode emphasizes the need for engineers to focus on accuracy and user experience while navigating the complexities of AI engineering. The speakers also discuss model upgrades, user feedback, and the importance of building effective user interfaces, emphasizing iterative development and rapid prototyping for chatbot performance evaluation.",
+      "event_date": "2025-09-23T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-09-23-evals-for-classification",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-09-23-evals-for-classification",
+      "youtube_id": "5Fy0hBzyduU",
+      "youtube_url": "https://www.youtube.com/watch?v=5Fy0hBzyduU",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-09-23-evals-for-classification/README.md",
+        "2025-09-23-evals-for-classification/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-025",
+      "season": 2,
+      "episode": 25,
+      "title": "Dynamic Schemas",
+      "description": "In this episode, Dex and Vaibhav explore the concept of dynamic UIs and how to build systems that can adapt to unknown data structures. They discuss the importance of dynamic schema generation, meta programming with LLMs, and the potential for creating dynamic React components. The conversation also delves into the execution and rendering of these dynamic schemas, highlighting the challenges and opportunities in this evolving field. They conclude with thoughts on future directions and the importance of building robust workflows around schema management.",
+      "event_date": "2025-09-30T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-09-30-dyanmic-schemas",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-09-30-dyanmic-schemas",
+      "youtube_id": "bak7-C--azc",
+      "youtube_url": "https://www.youtube.com/watch?v=bak7-C--azc",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-09-30-dyanmic-schemas/README.md",
+        "2025-09-30-dyanmic-schemas/email.md",
+        "2025-09-30-dyanmic-schemas/meta.md"
+      ],
+      "repo_images": [
+        "2025-09-30-dyanmic-schemas/frontend/public/file.svg",
+        "2025-09-30-dyanmic-schemas/frontend/public/globe.svg",
+        "2025-09-30-dyanmic-schemas/frontend/public/next.svg",
+        "2025-09-30-dyanmic-schemas/frontend/public/vercel.svg",
+        "2025-09-30-dyanmic-schemas/frontend/public/window.svg"
+      ]
+    },
+    {
+      "guid": "aitw-026",
+      "season": 2,
+      "episode": 26,
+      "title": "Anthropic Post Mortem",
+      "description": "In this conversation, Vaibhav Gupta and Aaron discuss various aspects of AI model performance, focusing on the recent downtime experienced by Anthropic and the implications for AI systems. They explore the sensitivity of models to context windows, the challenges of output corruption, and the complexities of token selection mechanisms. The discussion also highlights the importance of debugging and observability in AI systems, as well as the role of user-friendly workflows and integrations in making AI accessible to non-technical users. The conversation concludes with thoughts on the future of AI development and the need for effective metrics to monitor product performance.",
+      "event_date": "2025-10-07T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-10-07-anthropic-post-mortem",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-10-07-anthropic-post-mortem",
+      "youtube_id": "bLx-UlRTiEw",
+      "youtube_url": "https://www.youtube.com/watch?v=bLx-UlRTiEw",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-10-07-anthropic-post-mortem/README.md",
+        "2025-10-07-anthropic-post-mortem/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-027",
+      "season": 2,
+      "episode": 27,
+      "title": "No Vibes Allowed - Live Coding with AI Agents",
+      "description": "Vaibhav Gupta and Dex demonstrate the power of AI-assisted coding by implementing a complex timeout feature for BAML (a programming language for AI applications) in a live coding session. Starting from a GitHub issue that had been open since March, they showcase a systematic workflow: specification refinement, codebase research, implementation planning, and phased execution. Using Claude and specialized coding agents, they navigate a 400,000+ line codebase, implementing timeout configurations for HTTP clients including connection timeouts, request timeouts, idle timeouts, and time-to-first-token for streaming responses. The session highlights key practices like context engineering, frequent plan validation, breaking complex features into testable phases, and the importance of reading AI-generated code. In under 3 hours of live coding, they achieve what would typically take 1-2 days of engineering time, successfully implementing parsing, validation, error handling, and Python integration tests.",
+      "event_date": "2025-10-14T17:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-10-14-no-vibes-allowed",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-10-14-no-vibes-allowed",
+      "youtube_id": "zNZs19fIDHk",
+      "youtube_url": "https://www.youtube.com/watch?v=zNZs19fIDHk",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-10-14-no-vibes-allowed/README.md",
+        "2025-10-14-no-vibes-allowed/email.md",
+        "2025-10-14-no-vibes-allowed/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-028",
+      "season": 2,
+      "episode": 28,
+      "title": "Agentic RAG + Context Engineering",
+      "description": "In this conversation, Vaibhav Gupta and Dex explore the intricacies of building an Agentic Retrieval-Augmented Generation (RAG) system. They discuss the differences between traditional RAG and Agentic RAG, emphasizing the flexibility and decision-making capabilities of the latter. The conversation includes a live demo of a coding agent, insights into the coding architecture, challenges faced during tool implementation, and the iterative process of refining the system. They also touch on the integration of web search functionalities and the evaluation of tool effectiveness, providing a comprehensive overview of the development process and the underlying principles of Agentic RAG systems. In this conversation, Vaibhav Gupta and Dex discuss the intricacies of building dynamic AI systems, focusing on tool implementation, user interface optimization, and model performance. They explore the importance of reinforcement learning in training models, the challenges of debugging AI systems, and the significance of writing code to enhance understanding and efficiency in AI development. The dialogue emphasizes the balance between different AI approaches and the necessity of real use cases in building effective solutions.",
+      "event_date": "2025-10-21T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-10-21-agentic-rag-context-engineering",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-10-21-agentic-rag-context-engineering",
+      "youtube_id": "grGSFfyejA0",
+      "youtube_url": "https://www.youtube.com/watch?v=grGSFfyejA0",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-10-21-agentic-rag-context-engineering/ARCHITECTURE.md",
+        "2025-10-21-agentic-rag-context-engineering/README.md",
+        "2025-10-21-agentic-rag-context-engineering/TUI_LAYOUT.md",
+        "2025-10-21-agentic-rag-context-engineering/email.md",
+        "2025-10-21-agentic-rag-context-engineering/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-029",
+      "season": 2,
+      "episode": 29,
+      "title": "Ralph Wiggum under the hood: Coding Agent Power Tools",
+      "description": "We've talked a lot about how to use context engineering to get more out of coding agents. In this episode,\nwe dive deep on the Ralph Wiggum technique and why this different approach can reshape your coding workflow.\nWe explore how Ralph handles greenfield work, refactors, and spec generation—surprise: it's all about\nhigher-quality context engineering.",
+      "event_date": "2025-10-28T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-10-28-ralph-wiggum-coding-agent-power-tools",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-10-28-ralph-wiggum-coding-agent-power-tools",
+      "youtube_id": "fOPvAPdqgPo",
+      "youtube_url": "https://www.youtube.com/watch?v=fOPvAPdqgPo",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-10-28-ralph-wiggum-coding-agent-power-tools/README.md",
+        "2025-10-28-ralph-wiggum-coding-agent-power-tools/email.md",
+        "2025-10-28-ralph-wiggum-coding-agent-power-tools/meta.md"
+      ],
+      "repo_images": [
+        "2025-10-28-ralph-wiggum-coding-agent-power-tools/webapp/public/file.svg",
+        "2025-10-28-ralph-wiggum-coding-agent-power-tools/webapp/public/globe.svg",
+        "2025-10-28-ralph-wiggum-coding-agent-power-tools/webapp/public/next.svg",
+        "2025-10-28-ralph-wiggum-coding-agent-power-tools/webapp/public/vercel.svg",
+        "2025-10-28-ralph-wiggum-coding-agent-power-tools/webapp/public/window.svg"
+      ]
+    },
+    {
+      "guid": "aitw-030",
+      "season": 2,
+      "episode": 30,
+      "title": "Event-driven agentic loops",
+      "description": "Key takeaway: treat agent interactions as an event log, not mutable state. Modeling user inputs, LLM chunks,\ntool calls, interrupts, and UI actions as a single event stream lets you project state for the UI, agent loop,\nand persistence without drift. We walk through effect-ts patterns for subscribing to the bus, deriving “current”\nstate via pure projections, and deciding when to persist or replay events—plus trade-offs for queuing, cancelation,\nand tool orchestration in complex agent UX.",
+      "event_date": "2025-11-04T18:00:00.000Z",
+      "is_past": true,
+      "repository_folder": "2025-11-05-event-driven-agents",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-11-05-event-driven-agents",
+      "youtube_id": "_VB9TT1Vus4",
+      "youtube_url": "https://www.youtube.com/watch?v=_VB9TT1Vus4",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-11-05-event-driven-agents/README.md",
+        "2025-11-05-event-driven-agents/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-031",
+      "season": 2,
+      "episode": 31,
+      "title": "Dates, Times, and LLMs",
+      "description": "How do you make an LLM amazing at dates? Relative dates, absolute dates, timezones, all that madness.\nLet's talk dates, times, and all that goodness.",
+      "event_date": "2025-11-11T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-11-11-dates-and-times",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-11-11-dates-and-times",
+      "youtube_id": "l7txtbgCFGU",
+      "youtube_url": "https://www.youtube.com/watch?v=l7txtbgCFGU",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-11-11-dates-and-times/README.md",
+        "2025-11-11-dates-and-times/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-032",
+      "season": 2,
+      "episode": 32,
+      "title": "Building an Animation Pipeline",
+      "description": "We do a lot of work with Excalidraw, and this session shows the AI-first workflow\nfor turning any sketch into a finished animation.\nWe'll blend Claude Code with custom TypeScript scripts, wire up interactive slash commands,\nand add browser automation to existing OSS tools to export polished WebM assets.",
+      "event_date": "2025-11-18T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-11-18-building-an-animation-pipeline",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-11-18-building-an-animation-pipeline",
+      "youtube_id": "WhtT7K5Pkv0",
+      "youtube_url": "https://www.youtube.com/watch?v=WhtT7K5Pkv0",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2025-11-18-building-an-animation-pipeline/transcript.md"
+      ],
+      "repo_notes": [
+        "2025-11-18-building-an-animation-pipeline/README.md",
+        "2025-11-18-building-an-animation-pipeline/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-033",
+      "season": 2,
+      "episode": 33,
+      "title": "No Vibes Allowed: Using CodeLayer to Build CodeLayer",
+      "description": "Live coding with CodeLayer, we'll use Research / Plan / Implement live\nto ship 3 new features to CodeLayer.",
+      "event_date": "2025-11-25T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-11-25-no-vibes-allowed-using-codelayer-to-build-codelayer",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-11-25-no-vibes-allowed-using-codelayer-to-build-codelayer",
+      "youtube_id": "fF3GssyaTcc",
+      "youtube_url": "https://www.youtube.com/watch?v=fF3GssyaTcc",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2025-11-25-no-vibes-allowed-using-codelayer-to-build-codelayer/README.md",
+        "2025-11-25-no-vibes-allowed-using-codelayer-to-build-codelayer/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-035",
+      "season": 2,
+      "episode": 35,
+      "title": "Multimodal Evals",
+      "description": "Building evals for multimodal AI - testing vision models, document understanding,\nand image analysis with structured evaluation frameworks.",
+      "event_date": "2025-12-02T17:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-12-02-multimodal-evals",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-12-02-multimodal-evals",
+      "youtube_id": "jzhVo0iAX_I",
+      "youtube_url": "https://www.youtube.com/watch?v=jzhVo0iAX_I",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2025-12-02-multimodal-evals/transcript.md"
+      ],
+      "repo_notes": [
+        "2025-12-02-multimodal-evals/README.md",
+        "2025-12-02-multimodal-evals/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-034",
+      "season": 2,
+      "episode": 34,
+      "title": "Git Worktrees for AI Coding Agents",
+      "description": "Since ~ May 2025, there's been a ton of buzz around AI coding agents, parallelizing workflows,\nand it's not stopping any time soon. On this episode we'll go deep on the tech that can help\nyou push the limits of these tools, including:\n- Crash course on Git Worktrees\n- File and Spec Management, tradeoffs in hardlinks vs symlinks\n- tmux as a building block for collaborative agent workflows",
+      "event_date": "2025-12-09T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-12-09-git-worktrees",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-12-09-git-worktrees",
+      "youtube_id": "OpM-G3WNH4g",
+      "youtube_url": "https://www.youtube.com/watch?v=OpM-G3WNH4g",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2025-12-09-git-worktrees/transcript.md"
+      ],
+      "repo_notes": [
+        "2025-12-09-git-worktrees/README.md",
+        "2025-12-09-git-worktrees/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-036",
+      "season": 2,
+      "episode": 36,
+      "title": "Building a Prompt Optimizer",
+      "description": "What happens when models can write really good prompts? We dive deep into prompt optimization,\nexploring JEPA (Genetic Pareto) algorithm, how it works under the hood, and whether you can\nbuild your own optimizer. Live demo of a prompt optimizer built with BAML.",
+      "event_date": "2025-12-16T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-12-16-prompt-optimizer",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-12-16-prompt-optimizer",
+      "youtube_id": "IkSEXg6f4KY",
+      "youtube_url": "https://www.youtube.com/watch?v=IkSEXg6f4KY",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2025-12-16-prompt-optimizer/transcript.md"
+      ],
+      "repo_notes": [
+        "2025-12-16-prompt-optimizer/README.md",
+        "2025-12-16-prompt-optimizer/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-037",
+      "season": 2,
+      "episode": 37,
+      "title": "Founding HumanLayer: Dex's Journey",
+      "description": "End of year special part 1: Dex shares his journey from physics undergrad with half a CS minor\nto founding HumanLayer. From Sprout Social to Replicated to building AI agents for data warehouses,\nhear how the path to founding a developer tools company is never a straight line.",
+      "event_date": "2025-12-23T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-12-23-founding-humanlayer",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-12-23-founding-humanlayer",
+      "youtube_id": "LEOA19Ss9lc",
+      "youtube_url": "https://www.youtube.com/watch?v=LEOA19Ss9lc",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2025-12-23-founding-humanlayer/transcript.md"
+      ],
+      "repo_notes": [
+        "2025-12-23-founding-humanlayer/README.md",
+        "2025-12-23-founding-humanlayer/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-038",
+      "season": 2,
+      "episode": 38,
+      "title": "Founding Boundary: Vaibhav's Journey",
+      "description": "End of year special part 2: Vaibhav shares his journey from building card games in 7th grade\nto founding Boundary and creating BAML. From Microsoft to Google to 12 pivots as a YC founder,\nhear the story behind the programming language for AI pipelines.",
+      "event_date": "2025-12-30T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2025-12-30-founding-boundary",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-12-30-founding-boundary",
+      "youtube_id": "4YTl9w_bESE",
+      "youtube_url": "https://www.youtube.com/watch?v=4YTl9w_bESE",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2025-12-30-founding-boundary/transcript.md"
+      ],
+      "repo_notes": [
+        "2025-12-30-founding-boundary/README.md",
+        "2025-12-30-founding-boundary/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-039",
+      "season": 2,
+      "episode": 39,
+      "title": "Understanding Latency in AI Applications",
+      "description": "A deep dive into performance engineering for AI applications. We explore all the bottlenecks\nin agent systems - from prompt caching and token optimization to semantic streaming and UI design.\nLearn how to make your agents feel faster through strategic latency reduction and smart UX choices.",
+      "event_date": "2026-01-06T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-01-06-latency",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-01-06-latency",
+      "youtube_id": "wadVIkJnjQE",
+      "youtube_url": "https://www.youtube.com/watch?v=wadVIkJnjQE",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-01-06-latency/transcript.md"
+      ],
+      "repo_notes": [
+        "2026-01-06-latency/README.md",
+        "2026-01-06-latency/email.md",
+        "2026-01-06-latency/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-040",
+      "season": 2,
+      "episode": 40,
+      "title": "Applying 12-Factor Principles to Coding Agent SDKs",
+      "description": "We've done a lot of talking in the last few months about prompting coding agents and context engineering w/ markdown files, but today we'll talk about how to squeeze even more out of agents by using agent loops as smaller elements of a deterministic workflow.\n\nIn this session we'll cover:\n\n- using the claude agent sdk to stitch together microagent workflows\n- accumulating user rules across context windows\n- json state and structured outputs with zod\n- session continuation and forking vs. direct compaction",
+      "event_date": "2026-01-13T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-01-13-applying-12-factor-principles-to-coding-agent-sdks",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-01-13-applying-12-factor-principles-to-coding-agent-sdks",
+      "youtube_id": "qgAny0sEdIk",
+      "youtube_url": "https://www.youtube.com/watch?v=qgAny0sEdIk",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-01-13-applying-12-factor-principles-to-coding-agent-sdks/transcript.md"
+      ],
+      "repo_notes": [
+        "2026-01-13-applying-12-factor-principles-to-coding-agent-sdks/IMPLEMENTATION_PLAN.md",
+        "2026-01-13-applying-12-factor-principles-to-coding-agent-sdks/RALPH.md",
+        "2026-01-13-applying-12-factor-principles-to-coding-agent-sdks/README.md",
+        "2026-01-13-applying-12-factor-principles-to-coding-agent-sdks/email.md",
+        "2026-01-13-applying-12-factor-principles-to-coding-agent-sdks/meta.md",
+        "2026-01-13-applying-12-factor-principles-to-coding-agent-sdks/whiteboards.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-041",
+      "season": 2,
+      "episode": 41,
+      "title": "Email is All You Need",
+      "description": "Email is about as adversarial as inputs get: malformed HTML, inconsistent templates, human writing, forwarded junk, zero standards. And yet entire business workflows depend on it.\n\nThis week we're digging into what it takes to build a real email workflow engine where LLMs aren't demos, but are part of production infrastructure.\n\nWe'll cover:\n\n- Handling long-tail edge cases and weird inbox behavior\n- Validating and correcting extractions before they break downstream systems\n- Maintaining accuracy across thousands of formats and senders",
+      "event_date": "2026-01-20T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-01-20-email-is-all-you-need",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-01-20-email-is-all-you-need",
+      "youtube_id": "zpfXzk-3Yxw",
+      "youtube_url": "https://www.youtube.com/watch?v=zpfXzk-3Yxw",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-01-20-email-is-all-you-need/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-01-20-email-is-all-you-need/README.md",
+        "2026-01-20-email-is-all-you-need/email.md",
+        "2026-01-20-email-is-all-you-need/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-042",
+      "season": 2,
+      "episode": 42,
+      "title": "No Vibes Allowed",
+      "description": "We received great feedback from our previous live coding sessions, so this week we are bringing it back this week by live streaming while we add more features to BAML. We have discussed a lot of topics over the past several months, and we will be digging into the how to put many of these concepts into practice as we build out actual features in the product.",
+      "event_date": "2026-01-27T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-01-27-no-vibes-allowed",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-01-27-no-vibes-allowed",
+      "youtube_id": "Xq8VxnGVStg",
+      "youtube_url": "https://www.youtube.com/watch?v=Xq8VxnGVStg",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-01-27-no-vibes-allowed/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-01-27-no-vibes-allowed/README.md",
+        "2026-01-27-no-vibes-allowed/email.md",
+        "2026-01-27-no-vibes-allowed/meta.md",
+        "2026-01-27-no-vibes-allowed/whiteboards.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-043",
+      "season": 2,
+      "episode": 43,
+      "title": "Prompting Is Becoming a Product Surface",
+      "description": "Prompting used to be an engineering problem. Write the right string, tweak it until the model behaves, ship it behind the scenes.\n\nThat breaks the moment real users show up. Customers don't think in prompts — they think in goals. They want to explain what they're trying to accomplish, not debug a magic sentence.\n\nSo prompting is moving into the product. Interfaces matter. Structure matters. Guardrails and feedback matter. The real work now isn't prompt cleverness — it's building systems that let people express intent in a way software can actually understand and trust.",
+      "event_date": "2026-02-03T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-02-03-prompting-is-becoming-a-product-surface",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-02-03-prompting-is-becoming-a-product-surface",
+      "youtube_id": "qdfwmYTO0Aw",
+      "youtube_url": "https://www.youtube.com/watch?v=qdfwmYTO0Aw",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-02-03-prompting-is-becoming-a-product-surface/baml_src/transcript.baml",
+        "2026-02-03-prompting-is-becoming-a-product-surface/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-02-03-prompting-is-becoming-a-product-surface/README.md",
+        "2026-02-03-prompting-is-becoming-a-product-surface/email.md",
+        "2026-02-03-prompting-is-becoming-a-product-surface/meta.md",
+        "2026-02-03-prompting-is-becoming-a-product-surface/whiteboards.md"
+      ],
+      "repo_images": [
+        "2026-02-03-prompting-is-becoming-a-product-surface/baml_src/demo.png"
+      ]
+    },
+    {
+      "guid": "aitw-044",
+      "season": 2,
+      "episode": 44,
+      "title": "Agentic Backpressure Deep Dive",
+      "description": "In our next installment of advanced coding agent workflows, we'll explore some alternatives to research for improving results from coding agents. Code and web research is great for understanding the current codebase and finding documentation, but neither of these things is as concrete, and can still lead to hallucinations or incorrect assumptions.\n\nIn this episode, we'll talk about learning tests and proof-driven-dev - writing small PoC programs and tests that lay the groundwork to confirm understanding of external systems, *before* you get deep into implementation.\n\nThis will extend our previous conversation about agentic backpressure and building deterministic feedback loops to help coding agents work more autonomously.",
+      "event_date": "2026-02-10T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-02-10-agentic-backpressure-deep-dive",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-02-10-agentic-backpressure-deep-dive",
+      "youtube_id": "Zx_GOhGik0o",
+      "youtube_url": "https://www.youtube.com/watch?v=Zx_GOhGik0o",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-02-10-agentic-backpressure-deep-dive/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-02-10-agentic-backpressure-deep-dive/EPISODE.md",
+        "2026-02-10-agentic-backpressure-deep-dive/README.md",
+        "2026-02-10-agentic-backpressure-deep-dive/email.md",
+        "2026-02-10-agentic-backpressure-deep-dive/meta.md",
+        "2026-02-10-agentic-backpressure-deep-dive/typescript-sdk-docs.md",
+        "2026-02-10-agentic-backpressure-deep-dive/typescript-sdk-v2-docs.md",
+        "2026-02-10-agentic-backpressure-deep-dive/whiteboards.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-045",
+      "season": 2,
+      "episode": 45,
+      "title": "AI Content Pipeline Revisited",
+      "description": "We have another meta episode this week! Several months ago, we did an episode back about automating the pipeline for generating the artifacts and content for this podcast. That pipeline became stale, and so we breathed some life back into it and we're going to discuss the different parts of that pipeline on the podcast.\n\nThis episode will discuss everything that goes into bringing you an episode. We'll discuss\n    -  Details of the entire pipeline and tools we use to bring you each episode\n    -  How to get AI to have the right tone in freeform generation and not sound like AI\n    -  Browser agents\n    -  Finding clippable content from the transcript\n    -  Image generation\n    -  How far should automation go?",
+      "event_date": "2026-02-17T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-02-17-automating-aitw",
+      "repository_url": "https://github.com/hellovai/ai-that-works/tree/main/2026-02-17-automating-aitw",
+      "youtube_id": "U5Gssat8IUw",
+      "youtube_url": "https://www.youtube.com/watch?v=U5Gssat8IUw",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-02-17-automating-aitw/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-02-17-automating-aitw/README.md",
+        "2026-02-17-automating-aitw/email.md",
+        "2026-02-17-automating-aitw/meta.md"
+      ],
+      "repo_images": [
+        "2026-02-17-automating-aitw/src/thumbnail_creation/base_thumbnail.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/base_thumbnail_legacy.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep41.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep41_1.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep42_0.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep43.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep43_0.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep44.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep44_0.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep44_1.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep44_2.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep44_3.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep45.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep45_0.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep45_1.png",
+        "2026-02-17-automating-aitw/src/thumbnail_creation/output/thumbnail_ep99.png"
+      ]
+    },
+    {
+      "guid": "aitw-046",
+      "season": 2,
+      "episode": 46,
+      "title": "No Vibes Allowed February",
+      "description": "In our February edition of our No Vibes Allowed series, we will be coding and shipping real features in our products using all of the concepts we cover on this podcast, including using advanced context engineering and backpressure. Join us to see how these concepts apply to real code and real products.",
+      "event_date": "2026-02-24T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-02-24-no-vibes-february",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-02-24-no-vibes-february",
+      "youtube_id": "YcT7gjzj2TU",
+      "youtube_url": "https://www.youtube.com/watch?v=YcT7gjzj2TU",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-02-24-no-vibes-february/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-02-24-no-vibes-february/README.md",
+        "2026-02-24-no-vibes-february/email.md",
+        "2026-02-24-no-vibes-february/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-047",
+      "season": 2,
+      "episode": 47,
+      "title": "PII Redaction and Sensitive Data Scrubbing",
+      "description": "When building generative AI systems, one of the biggest risks companies face is the LLM accidentally exposing PII or PHI to an end user that isn't cleared to see it. This week on the podcast, we'll cover how to fix this problem. We'll discuss what prompting techniques you can use, and more importantly, we'll discuss how you can build evals to get comfortable with shipping these systems to users.",
+      "event_date": "2026-03-03T18:15:00Z",
+      "is_past": true,
+      "repository_folder": "2026-03-03-pii-redaction-and-sensitive-data-scrubbing",
+      "repository_url": "https://github.com/hellovai/ai-that-works/tree/main/2026-03-03-pii-redaction-and-sensitive-data-scrubbing",
+      "youtube_id": "Ql2gLHWuX7M",
+      "youtube_url": "https://www.youtube.com/watch?v=Ql2gLHWuX7M",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-03-03-pii-redaction-and-sensitive-data-scrubbing/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-03-03-pii-redaction-and-sensitive-data-scrubbing/README.md",
+        "2026-03-03-pii-redaction-and-sensitive-data-scrubbing/email.md",
+        "2026-03-03-pii-redaction-and-sensitive-data-scrubbing/meta.md"
+      ],
+      "repo_images": [
+        "2026-03-03-pii-redaction-and-sensitive-data-scrubbing/baml_src/Screenshot 2026-03-03 at 11.04.59 AM.png"
+      ]
+    },
+    {
+      "guid": "aitw-048",
+      "season": 2,
+      "episode": 48,
+      "title": "Claude Agent Skills Deep Dive",
+      "description": "Claude Code has exploded in its abilities over the past 8 months, and it can be hard to keep up. Seemingly overnight, everyone is discussing claude's skills, commands, agents, and subagents, and a lot of the literature out there already assumes you know what these are. This week on the podcast, we're going to go over all of them. We will discuss what each one is, how and when to use it, what the benefits and drawbacks are, and how they fit into the broader context engineering picture.",
+      "event_date": "2026-03-10T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-03-10-claude-agent-skills-deep-dive",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-03-10-claude-agent-skills-deep-dive",
+      "youtube_id": "b5O6gb_Zuk8",
+      "youtube_url": "https://www.youtube.com/watch?v=b5O6gb_Zuk8",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-03-10-claude-agent-skills-deep-dive/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-03-10-claude-agent-skills-deep-dive/README.md",
+        "2026-03-10-claude-agent-skills-deep-dive/email.md",
+        "2026-03-10-claude-agent-skills-deep-dive/meta.md",
+        "2026-03-10-claude-agent-skills-deep-dive/whiteboards.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-049",
+      "season": 2,
+      "episode": 49,
+      "title": "Prompt Injections Guardrails",
+      "description": "A major risk factor in agentic coding is Prompt Injections. Tool output, document retrieval, system prompts all get inputted into the LLM and are all at risk of prompt injections.\n\nThis week on the podcast, we're going to cover how to handle this risk. We will discuss how to protect system prompts, avoid hijacking, and implementing ethical guards",
+      "event_date": "2026-03-17T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-03-17-prompt-injections-guardrails",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-03-17-prompt-injections-guardrails",
+      "youtube_id": "zU8GpxgYDvc",
+      "youtube_url": "https://www.youtube.com/watch?v=zU8GpxgYDvc",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-03-17-prompt-injections-guardrails/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-03-17-prompt-injections-guardrails/README.md",
+        "2026-03-17-prompt-injections-guardrails/email.md",
+        "2026-03-17-prompt-injections-guardrails/meta.md",
+        "2026-03-17-prompt-injections-guardrails/whiteboards.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-050",
+      "season": 2,
+      "episode": 50,
+      "title": "MCP is Dead?",
+      "description": "MCP isn't dead...or is it? This week on the podcast, we'll dive into this debate. What is the state of MCP today?",
+      "event_date": "2026-03-24T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-03-24-mcp-is-dead",
+      "repository_url": "https://github.com/hellovai/ai-that-works/tree/main/2026-03-24-mcp-is-dead",
+      "youtube_id": "z5inaSXkiTU",
+      "youtube_url": "https://www.youtube.com/watch?v=z5inaSXkiTU",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-03-24-mcp-is-dead/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-03-24-mcp-is-dead/README.md",
+        "2026-03-24-mcp-is-dead/email.md",
+        "2026-03-24-mcp-is-dead/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-051",
+      "season": 2,
+      "episode": 51,
+      "title": "No Vibes Allowed March Edition",
+      "description": "This week on the podcast is our March episode of our no vibes allowed series! Join us to watch how we implement everything we discuss on a weekly basis in our company's product. Real code, real trade-offs, and real production systems",
+      "event_date": "2026-03-31T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-03-31-no-vibes-march",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-03-31-no-vibes-march",
+      "youtube_id": "0rMG-3iiilc",
+      "youtube_url": "https://www.youtube.com/watch?v=0rMG-3iiilc",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-03-31-no-vibes-march/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-03-31-no-vibes-march/README.md",
+        "2026-03-31-no-vibes-march/email.md",
+        "2026-03-31-no-vibes-march/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-052",
+      "season": 2,
+      "episode": 52,
+      "title": "SSE Streaming",
+      "description": "This week we build a real-time site summarizer using Server-Sent Events (SSE) streaming. We crawl a website, summarize each page with an LLM using BAML's semantic streaming, and stream partial results back to the browser as they're generated. We cover batched async concurrency, FastAPI SSE endpoints, and BAML's @stream.done/@stream.not_null attributes for controlling what streams and what waits.",
+      "event_date": "2026-04-07T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-04-07-sse-streaming",
+      "repository_url": "https://github.com/hellovai/ai-that-works/tree/main/2026-04-07-sse-streaming",
+      "youtube_id": "9MFiATinGC0",
+      "youtube_url": "https://www.youtube.com/watch?v=9MFiATinGC0",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-04-07-sse-streaming/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-04-07-sse-streaming/Claude.md",
+        "2026-04-07-sse-streaming/README.md",
+        "2026-04-07-sse-streaming/email.md",
+        "2026-04-07-sse-streaming/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-053",
+      "season": 2,
+      "episode": 53,
+      "title": "Agentic Coding for Frontend Apps",
+      "description": "We do a lot of deep research and planning advice for building complex backend systems but in this week's episode, we're gonna talk about ways you can move faster and maintain quality for frontend code.\n\nWhile backend systems rely on good overall design and tend to be programatically verifiable, frontends require much tighter iteration loops and taste, and these explorations just don't suit themselves to complex up front planning. On the other hand, that shouldn't be an excuse to just regress to yoloing prompts. Good frontend code requires taste, judgement, and is just as vulnerable to a descent into chaotic spaghetti slop.\n\nSimilar to our learning tests episode, this chat will cover small tactical side quests you can incorporate into your planning and development workflow to improve your frontend throughput. We'll primarily explore storybook as a vessel for interacting with and previewing UI, and approaches to separate presentation logic from business logic. By the end, you may find yourself wanting to ditch figma altogether and just write the components live.",
+      "event_date": "2026-04-14T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-04-14-agentic-coding-for-frontend-apps",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-04-14-agentic-coding-for-frontend-apps",
+      "youtube_id": "adpUOpW85ns",
+      "youtube_url": "https://www.youtube.com/watch?v=adpUOpW85ns",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-04-14-agentic-coding-for-frontend-apps/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-04-14-agentic-coding-for-frontend-apps/README.md",
+        "2026-04-14-agentic-coding-for-frontend-apps/email.md",
+        "2026-04-14-agentic-coding-for-frontend-apps/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-054",
+      "season": 2,
+      "episode": 54,
+      "title": "Harness Engineering Without the Hype",
+      "description": "This week on the pod we are going to cut through the hype around harness engineering and separate the signal from the noise. Join us to watch Dex crash out about this and expose the reality.",
+      "event_date": "2026-04-21T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-04-21-harness-engineering-without-the-hype",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-04-21-harness-engineering-without-the-hype",
+      "youtube_id": "gX9WpYY61xA",
+      "youtube_url": "https://www.youtube.com/watch?v=gX9WpYY61xA",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-04-21-harness-engineering-without-the-hype/trasncript.txt"
+      ],
+      "repo_notes": [
+        "2026-04-21-harness-engineering-without-the-hype/README.md",
+        "2026-04-21-harness-engineering-without-the-hype/email.md",
+        "2026-04-21-harness-engineering-without-the-hype/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-055",
+      "season": 2,
+      "episode": 55,
+      "title": "No Vibes Allowed - Building Design Docs with AI",
+      "description": "In this month's no vibes allowed episode, Vaibhav will show how he uses AI to make design docs for complicated tasks by building out an actual design doc for a feature in BAML. As always for our no vibes allowed series, we will be solving real problems in real production systems.",
+      "event_date": "2026-04-28T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-04-28-no-vibes-design-docs",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-04-28-no-vibes-design-docs",
+      "youtube_id": "KCqsoXveqiI",
+      "youtube_url": "https://www.youtube.com/watch?v=KCqsoXveqiI",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-04-28-no-vibes-design-docs/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-04-28-no-vibes-design-docs/README.md",
+        "2026-04-28-no-vibes-design-docs/email.md",
+        "2026-04-28-no-vibes-design-docs/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-056",
+      "season": 2,
+      "episode": 56,
+      "title": "OpenAI tells you not to build your own harness",
+      "description": "Harness engineering is all the hype now, so on this week on the podcast we're looking back to an article written by OpenAI in February about harness engineering, \"Harness engineering: leveraging Codex in an agent-first world\". In this article, they claim that the era of \"hand-written code\" is officially over. We break down their experiment of shipping a million-line product with zero manual coding, shifting the human role from \"coder\" to \"environment designer.\"",
+      "event_date": "2026-05-05T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-05-05-openai-tells-you-not-to-build-your-own-harness",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-05-05-openai-tells-you-not-to-build-your-own-harness",
+      "youtube_id": "h99bTZTR_IU",
+      "youtube_url": "https://www.youtube.com/watch?v=h99bTZTR_IU",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-05-05-openai-tells-you-not-to-build-your-own-harness/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-05-05-openai-tells-you-not-to-build-your-own-harness/README.md",
+        "2026-05-05-openai-tells-you-not-to-build-your-own-harness/email.md",
+        "2026-05-05-openai-tells-you-not-to-build-your-own-harness/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-057",
+      "season": 2,
+      "episode": 57,
+      "title": "\"Code Mode\" Deep Dive",
+      "description": "On Monday, Pash from OpenAI shared that Codex has a secret \"code mode\" feature - an alternative to traditional tool calling. There's a lot of debate going on around the best way to give tools to models - skills vs. mcps, CLIs and bash vs custom tools, or letting the model write code for everything. In this episode we're going to cut through the hype and dive deep on the differences and tradeoffs between these methods.\n\n   • What is \"code mode\" and how does it work\n   • Tradeoffs between MCP vs. Bash+CLI vs. Code mode\n   • Why it matters to agent or harness builders",
+      "event_date": "2026-05-12T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-05-12-code-mode-deep-dive",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-05-12-code-mode-deep-dive",
+      "youtube_id": "0dx3j4CmSFw",
+      "youtube_url": "https://www.youtube.com/watch?v=0dx3j4CmSFw",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-05-12-code-mode-deep-dive/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-05-12-code-mode-deep-dive/README.md",
+        "2026-05-12-code-mode-deep-dive/email.md",
+        "2026-05-12-code-mode-deep-dive/meta.md"
+      ],
+      "repo_images": [
+        "2026-05-12-code-mode-deep-dive/whiteboard-1.png"
+      ]
+    },
+    {
+      "guid": "aitw-058",
+      "season": 2,
+      "episode": 58,
+      "title": "How AI Agents Can Safely Ship Code to Production",
+      "description": "This week, the top headline is vibe coders realizing that they can use feature flags to ship experimental (read: slop) features to production without impacting all customers.\n\nShipping code is a lot harder when everything is changing all the time. Feature flags can be a good technique to test various things, but how do you set that up? Do you feature flag new models? New prompts? New harnesses? We'll dive into details here and see where feature flags improve your product delivery vs. just giving you an excuse to ship more slop.",
+      "event_date": "2026-05-19T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-05-19-feature-flag-everything",
+      "repository_url": "https://github.com/hellovai/ai-that-works/tree/main/2026-05-19-feature-flag-everything",
+      "youtube_id": "gRqb7R4Pcrs",
+      "youtube_url": "https://www.youtube.com/watch?v=gRqb7R4Pcrs",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-05-19-feature-flag-everything/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-05-19-feature-flag-everything/README.md",
+        "2026-05-19-feature-flag-everything/meta.md"
+      ],
+      "repo_images": [
+        "2026-05-19-feature-flag-everything/whiteboard-1.png"
+      ]
+    },
+    {
+      "guid": "aitw-059",
+      "season": 2,
+      "episode": 59,
+      "title": "No Vibes Allowed: Performance Engineering",
+      "description": "This week on the podcast, we are doing another no vibes allowed episode focusing on performance engineering. We will dive into high-performance engineering on virtual machines to help you maximize efficiency out of your compute infrastructure. When you are deploying heavy LLM workloads or complex pipelines, an unoptimized VM can lead to crippling latency, memory bottlenecks, and ballooning costs that break your application in the real world. We break down practical techniques to configure your environments, manage resources, and eliminate overhead so your models run flawlessly under pressure.",
+      "event_date": "2026-05-26T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-05-26-no-vibes-allowed-performance-engineering",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works",
+      "youtube_id": "mm6n4n09RaU",
+      "youtube_url": "https://www.youtube.com/watch?v=mm6n4n09RaU",
+      "in_youtube_show": true,
+      "mapping_note": "manual title/topic match",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2026-05-26-no-vibes-allowed-performance-engineering/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-060",
+      "season": 2,
+      "episode": 60,
+      "title": "How to Build AI Agents that Work in Any Language",
+      "description": "In this episode, we discuss the challenge of building multilingual AI applications that perform consistently whether your user is interacting in English, Spanish, French, whatever. Can you simply run an English prompt through a basic translator? Or will that break down in production? We'll be breaking down practical engineering strategies for designing flexible, cross-lingual prompt architectures that maintain semantic alignment without forcing you to build and manage separate pipelines for every language.",
+      "event_date": "2026-06-02T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-06-02-multilingual-ai-apps",
+      "repository_url": "https://github.com/hellovai/ai-that-works/tree/main/2026-06-02-multilingual-ai-apps",
+      "youtube_id": "-gFdtc-HbOY",
+      "youtube_url": "https://www.youtube.com/watch?v=-gFdtc-HbOY",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-06-02-multilingual-ai-apps/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-06-02-multilingual-ai-apps/README.md",
+        "2026-06-02-multilingual-ai-apps/email.md",
+        "2026-06-02-multilingual-ai-apps/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-061",
+      "season": 2,
+      "episode": 61,
+      "title": "Hands-on with Fable 5",
+      "description": "We had agent observability on the schedule, but Anthropic shipped Fable 5 about twenty minutes before we went live, so we tossed the plan and got hands-on with the new model instead. Zero prep, all live.\n\nThis is an unscripted look at exactly how we kick the tires on a fresh model release: take the hardest problem you're already deep in, hand it over, and watch whether it finds leverage you didn't. Vaibhav ran it against an in-progress design doc for the BAML VM's observability layer, Dex ran it against an old race-condition benchmark he keeps around, and we talk through what the model caught, what it missed, and why most model releases are more hype than the value they deliver day to day.",
+      "event_date": "2026-06-09T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-06-09-fable-5",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-06-09-agent-observability",
+      "youtube_id": "hTkmSVuDMPg",
+      "youtube_url": "https://www.youtube.com/watch?v=hTkmSVuDMPg",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-06-09-fable-5/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-06-09-fable-5/README.md",
+        "2026-06-09-fable-5/email.md",
+        "2026-06-09-fable-5/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-062",
+      "season": 2,
+      "episode": 62,
+      "title": "Product Specs with AI",
+      "description": "We've talked a lot about design discussions for planning work with AI and getting leverage before writing the code, but this process has a common pitfall: it combines product decisions (how does it work, what is the user experience) with technical decisions (how do we build it, what patterns do we follow).\n\nThis complecting of concerns can cause important questions to be missed. On today's AI that works we'll dig into techniques to split out product vs. technical questions to enable less-technical folks to participate in product specification that is grounded in codebase research, and ensure technical depth is achieved without getting distracted by product questions.",
+      "event_date": "2026-06-16T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-06-16-product-specs-with-ai",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-06-16-product-specs-with-ai",
+      "youtube_id": "0LPBw3NO3Jc",
+      "youtube_url": "https://www.youtube.com/watch?v=0LPBw3NO3Jc",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-06-16-product-specs-with-ai/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-06-16-product-specs-with-ai/README.md",
+        "2026-06-16-product-specs-with-ai/email.md",
+        "2026-06-16-product-specs-with-ai/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-063",
+      "season": 2,
+      "episode": 63,
+      "title": "Software Factory for Agent Tools",
+      "description": "Everyone's obsessed with software factories, and the core of a software factory is a persistent feedback loop - in this episode Vaibhav and Dhilan will showcase a loop they built to test new BAML language features 24/7 and improve the language based on feedback from coding agents trying to implement features.",
+      "event_date": "2026-06-23T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-06-23-software-factory-for-agent-tools",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-06-23-software-factory-for-agent-tools",
+      "youtube_id": "485FGIq8LKM",
+      "youtube_url": "https://www.youtube.com/watch?v=485FGIq8LKM",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-06-23-software-factory-for-agent-tools/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-06-23-software-factory-for-agent-tools/README.md",
+        "2026-06-23-software-factory-for-agent-tools/email.md",
+        "2026-06-23-software-factory-for-agent-tools/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-064",
+      "season": 2,
+      "episode": 64,
+      "title": "agent observability",
+      "description": "In this episode, we will dive into AI agent observability and answer a question every production engineer eventually faces: how do you diagnose why an autonomous agent went off the rails three days ago?\n\nWhen you are dealing with non-deterministic tools, old-school debugging habits like inserting `print(\"here\")` statements fails to scale. We will break down the essentials of modern agent tracking, from implementing structured logging for complex tool calls to establishing robust tracing that allows you to replay and reconstruct an agent's exact decision tree.",
+      "event_date": "2026-07-07T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-07-07-agent-observability",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-07-07-agent-observability",
+      "youtube_id": "_WLVv1C6-VM",
+      "youtube_url": "https://www.youtube.com/watch?v=_WLVv1C6-VM",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-07-07-agent-observability/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-07-07-agent-observability/README.md",
+        "2026-07-07-agent-observability/email.md",
+        "2026-07-07-agent-observability/meta.md"
+      ],
+      "repo_images": [
+        "2026-07-07-agent-observability/whiteboard-1.png"
+      ]
+    },
+    {
+      "guid": "aitw-065",
+      "season": 2,
+      "episode": 65,
+      "title": "SOTA Coding Agent Benchmarks",
+      "description": "We've had a lot of benchmarks for coding agents for a long time. We'll talk about the past generation and the new generation, what they're doing differently, as well as... I don't know. come hang it will be good.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-07-14T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-07-14-sota-coding-agent-benchmarks",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-07-14-sota-coding-agent-benchmarks",
+      "youtube_id": "X5mI1ZVxaIc",
+      "youtube_url": "https://www.youtube.com/watch?v=X5mI1ZVxaIc",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-07-14-sota-coding-agent-benchmarks/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-07-14-sota-coding-agent-benchmarks/README.md",
+        "2026-07-14-sota-coding-agent-benchmarks/email.md",
+        "2026-07-14-sota-coding-agent-benchmarks/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-066",
+      "season": 2,
+      "episode": 66,
+      "title": "No Vibes Allowed - July Edition",
+      "description": "This week on the podcast we will be hosting another session of our No Vibes Allowed series. Join us to see how everyting we've talked about get implemented in real code to solve real problems in our codebases.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-07-21T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-07-21-no-vibes-july",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-07-21-no-vibes-july",
+      "youtube_id": "rTn8Vhdt-Jo",
+      "youtube_url": "https://www.youtube.com/watch?v=rTn8Vhdt-Jo",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-07-21-no-vibes-july/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-07-21-no-vibes-july/README.md",
+        "2026-07-21-no-vibes-july/email.md",
+        "2026-07-21-no-vibes-july/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-067",
+      "season": 2,
+      "episode": 67,
+      "title": "Your Model is Already Obsolete",
+      "description": "In the last month alone: Opus 5, Sonnet 5, Grok 4.5, Kimi K3, GPT-5.6, Gemini 3.6. Any one of them might make your agent smarter or your system cheaper. That's the fun part. The less fun part is that every model you're running in production today just got a month closer to its retirement date.\n\nModel deprecation is one of the only outages you get advance notice of, and teams still manage to take it as a surprise. This week on the podcast we show you how to make model swaps into a non-event instead of a p0.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-07-28T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-07-28-your-model-is-already-obsolete",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-07-28-your-model-is-already-obsolete",
+      "youtube_id": "Y-I9m5YsAcs",
+      "youtube_url": "https://www.youtube.com/watch?v=Y-I9m5YsAcs",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-07-28-your-model-is-already-obsolete/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-07-28-your-model-is-already-obsolete/README.md",
+        "2026-07-28-your-model-is-already-obsolete/email.md",
+        "2026-07-28-your-model-is-already-obsolete/meta.md"
+      ],
+      "repo_images": [
+        "2026-07-28-your-model-is-already-obsolete/whiteboard-1.png"
+      ]
+    },
+    {
+      "guid": "aitw-068",
+      "season": 2,
+      "episode": 68,
+      "title": "SlopCodeBench",
+      "description": "On the podcast this week, we will examine a new AI coding benchmark called SlopCodeBench (SCBench), which aims to evaluate how software is truly developed. While typical benchmarks evaluate models using single-shot solutions against specifications, they fail to address the long-term difficulties of software development. Creating an initial solution is simple; the real challenge lies in extending, refactoring, and maintaining code over time. SCBench addresses this gap by requiring frontier models to continually build upon their own previously generated code across multi-checkpoint trajectories.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-08-04T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-08-04-slop-code-bench",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-08-04-slop-code-bench",
+      "youtube_id": "Yh4eL60Ncxs",
+      "youtube_url": "https://www.youtube.com/watch?v=Yh4eL60Ncxs",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-08-04-slop-code-bench/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-08-04-slop-code-bench/README.md",
+        "2026-08-04-slop-code-bench/email.md",
+        "2026-08-04-slop-code-bench/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-069",
+      "season": 2,
+      "episode": 69,
+      "title": "Unconference RECAP",
+      "description": "On Saturday, August 8th, we are hosting another unconference bringing together some of the brighest minds in AI. This week on the podcast we will be recapping it! What were some of the best takeaways? What did we learn? If you aren't attending the unconference, definitely tune into this episode to see what you missed.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-08-11T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-08-11-unconference-recap",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-08-11-unconference-recap",
+      "youtube_id": "fyZ0i4USjgc",
+      "youtube_url": "https://www.youtube.com/watch?v=fyZ0i4USjgc",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-08-11-unconference-recap/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-08-11-unconference-recap/README.md",
+        "2026-08-11-unconference-recap/email.md",
+        "2026-08-11-unconference-recap/meta.md"
+      ],
+      "repo_images": [
+        "2026-08-11-unconference-recap/whiteboard-1.png"
+      ]
+    },
+    {
+      "guid": "aitw-070",
+      "season": 2,
+      "episode": 70,
+      "title": "syncs and A/B testing 200 agents",
+      "description": "We've got a special two-part episode for you this week! We brought on two guests to tackle two massive technical challenges in production AI:\n\nWhat actually happens when you spin up 200 agents in parallel to run real A/B tests?\n\nHow do you cleanly sync data all the way from raw state, through your agent layer, down to the frontend?\n\nTune in for practical takeaways on scaling agent infrastructure that works.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-08-18T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-08-18-syncs-and-ab-testing-200-agents",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-08-18-syncs-and-ab-testing-200-agents",
+      "youtube_id": "GF7dnSlCM4U",
+      "youtube_url": "https://www.youtube.com/watch?v=GF7dnSlCM4U",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-08-18-syncs-and-ab-testing-200-agents/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-08-18-syncs-and-ab-testing-200-agents/README.md",
+        "2026-08-18-syncs-and-ab-testing-200-agents/email.md",
+        "2026-08-18-syncs-and-ab-testing-200-agents/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-071",
+      "season": 2,
+      "episode": 71,
+      "title": "Software Factory Design Patterns",
+      "description": "In this episode, we'll talk about key interfaces and how they fit together in the modern software factory, what you could buy vs build, what you should always own, across compute, dev environment, harness, and orchestration. We'll dig into how sessions / traces / artifacts / plans all become perrs of code in the new forge / system of record for software\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-08-25T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-08-25-software-factory-design-patterns",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-08-25-software-factory-design-patterns",
+      "youtube_id": "tGbjIvvYuHE",
+      "youtube_url": "https://www.youtube.com/watch?v=tGbjIvvYuHE",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-08-25-software-factory-design-patterns/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-08-25-software-factory-design-patterns/README.md",
+        "2026-08-25-software-factory-design-patterns/email.md",
+        "2026-08-25-software-factory-design-patterns/meta.md"
+      ],
+      "repo_images": [
+        "2026-08-25-software-factory-design-patterns/whiteboard-1.png"
+      ]
+    },
+    {
+      "guid": "aitw-072",
+      "season": 2,
+      "episode": 72,
+      "title": "Code Mode for Extensible Software",
+      "description": "Making software extensible has always involved designing good and flexible interfaces (e.g. vs code extensions, iphone apps). But the most flexible interface is code, and today Vaibhav's gonna share some very futuristic ideas on what the next generation of customizable tools looks like.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-09-01T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-09-01-code-mode-extensible-software",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-09-01-code-mode-extensible-software",
+      "youtube_id": "IXe48aIw_X4",
+      "youtube_url": "https://www.youtube.com/watch?v=IXe48aIw_X4",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-09-01-code-mode-extensible-software/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-09-01-code-mode-extensible-software/README.md",
+        "2026-09-01-code-mode-extensible-software/email.md",
+        "2026-09-01-code-mode-extensible-software/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-073",
+      "season": 2,
+      "episode": 73,
+      "title": "Software Factories: Hands on with Real Builders",
+      "description": "We had some really cool unconference talks from hands-on software factory builders, and this week we're gonna bring them on the show to talk about how they build their start up, week in week out, with background agents that get smarter every week.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-09-08T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-09-08-hands-on-software-factories",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-09-08-hands-on-software-factories",
+      "youtube_id": "HGizPRQfpdw",
+      "youtube_url": "https://www.youtube.com/watch?v=HGizPRQfpdw",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-09-08-hands-on-software-factories/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-09-08-hands-on-software-factories/README.md",
+        "2026-09-08-hands-on-software-factories/email.md",
+        "2026-09-08-hands-on-software-factories/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-074",
+      "season": 2,
+      "episode": 74,
+      "title": "performance engineering",
+      "description": "When milliseconds are too slow, you have to engineer for nanoseconds. This week, we're unpacking N5-level optimization for AI workloads and what it takes to shave off ultimate low-level latency. We discuss the engineering techniques required to strip away overhead, optimize memory throughput, and push inference infrastructure to absolute hardware limits.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-09-15T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-09-15-performance-engineering",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-09-15-performance-engineering",
+      "youtube_id": "WHLXRZi8Mus",
+      "youtube_url": "https://www.youtube.com/watch?v=WHLXRZi8Mus",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-09-15-performance-engineering/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-09-15-performance-engineering/README.md",
+        "2026-09-15-performance-engineering/email.md",
+        "2026-09-15-performance-engineering/meta.md"
+      ],
+      "repo_images": []
+    },
+    {
+      "guid": "aitw-075",
+      "season": 2,
+      "episode": 75,
+      "title": "All About Jev",
+      "description": "Jev has been making lots of waves in the AI world this week. This week on the podcast, we will dive into jev and discuss how token generation may be holding back your agent architecture and how jev compares to and complements BAML. We'll look at what type safety means across different layers of the stack, why generating text for routing and classification is an antipattern, and how to combine fast decision models with BAML-orchestrated workflows for production agent architecture.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-09-22T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-09-22-all-about-jev",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-09-22-all-about-jev",
+      "youtube_id": "35PSMmDDKP8",
+      "youtube_url": "https://www.youtube.com/watch?v=35PSMmDDKP8",
+      "in_youtube_show": true,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-09-22-all-about-jev/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-09-22-all-about-jev/README.md",
+        "2026-09-22-all-about-jev/email.md",
+        "2026-09-22-all-about-jev/meta.md"
+      ],
+      "repo_images": [
+        "2026-09-22-all-about-jev/thumbnail_ep75.png"
+      ]
+    },
+    {
+      "guid": "aitw-076",
+      "season": 2,
+      "episode": 76,
+      "title": "GTM Engineering and AI at Rippling",
+      "description": "In this episode, we break down GTM Engineering, the practice of applying software engineering principles, custom data pipelines, and AI agents to go-to-market ops. We will be joined by John Kutay at Rippling to see how they do this in practice\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-09-29T18:00:00Z",
+      "is_past": true,
+      "repository_folder": "2026-09-29-gtm-engineering",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-09-29-gtm-engineering",
+      "youtube_id": "bGMiRmXbRUs",
+      "youtube_url": "https://www.youtube.com/watch?v=bGMiRmXbRUs",
+      "in_youtube_show": false,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [
+        "2026-09-29-gtm-engineering/transcript.txt"
+      ],
+      "repo_notes": [
+        "2026-09-29-gtm-engineering/README.md",
+        "2026-09-29-gtm-engineering/email.md",
+        "2026-09-29-gtm-engineering/meta.md"
+      ],
+      "repo_images": [
+        "2026-09-29-gtm-engineering/thumbnail_ep76.png"
+      ]
+    },
+    {
+      "guid": "aitw-077",
+      "season": 2,
+      "episode": 77,
+      "title": "Building a Memory Pipeline",
+      "description": "We've discussed how to build memory supervisors and memory pipelines before, but in this episode we're going to dive into real code and make it happen with real problems and real constraints.\n\nMeet the Speakers🧑‍💻​\n\n​​Meet Vaibhav Gupta, one of the creators of BAML and YC alum. He spent 10 years in AI performance optimization at places like Google, Microsoft, and D. E. Shaw. He loves diving deep and chatting about anything related to Gen AI and Computer Vision!\n\n​Meet Dex Horthy, founder at HumanLayer and coiner of the term Context Engineering. He spent 10+ years building devops tools at Replicated, Sprout Social and JPL. DevOps junkie turned AI Engineer.",
+      "event_date": "2026-10-06T18:00:00Z",
+      "is_past": false,
+      "repository_folder": "2026-10-06-building-a-memory-pipeline",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2026-10-06-building-a-memory-pipeline",
+      "youtube_id": null,
+      "youtube_url": null,
+      "in_youtube_show": false,
+      "mapping_note": "repository metadata",
+      "repo_transcripts": [],
+      "repo_notes": [
+        "2026-10-06-building-a-memory-pipeline/meta.md"
+      ],
+      "repo_images": [
+        "2026-10-06-building-a-memory-pipeline/thumbnail_ep77.png"
+      ]
+    }
+  ]
+}
