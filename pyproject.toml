@@ -14,6 +14,7 @@ dependencies = [
 
 [project.scripts]
 aitw-search = "aitw_search.search:main"
+aitw-rag = "aitw_search.rag:main"
 aitw-build = "aitw_search.build_index:main"
 
 [build-system]

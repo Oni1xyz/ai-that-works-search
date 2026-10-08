@@ -85,6 +85,35 @@ uv run aitw-search \
 
 Results include episode title, source type, timestamped YouTube URL when available, repository path, similarity score, and a text preview.
 
+## Retrieval-augmented generation (RAG)
+
+Retrieve a diversified context pack from the embedding index:
+
+```bash
+uv run aitw-rag \
+  'What patterns do the hosts recommend for agent memory and context compaction?' \
+  --index index --top-k 8
+```
+
+Emit a citation-constrained prompt for Hermes or another model:
+
+```bash
+uv run aitw-rag \
+  'What patterns do the hosts recommend for agent memory and context compaction?' \
+  --index index --top-k 8 --prompt-only
+```
+
+Optionally synthesize through any OpenAI-compatible chat-completions endpoint:
+
+```bash
+export OPENAI_API_KEY='set this outside the repository'
+export OPENAI_BASE_URL='https://api.openai.com/v1'  # or a trusted local endpoint
+export AITW_RAG_MODEL='your-generation-model'
+uv run aitw-rag 'Compare harness engineering and context engineering' --index index --generate
+```
+
+The RAG prompt requires numbered inline citations, prohibits claims outside the retrieved context, and emits timestamped YouTube links or repository paths as sources. Retrieval is capped per episode by default so one long transcript does not monopolize the context window.
+
 ## Provenance and limitations
 
 - `data/episodes.json` is the union of repository episodes and every video in the supplied YouTube show.
