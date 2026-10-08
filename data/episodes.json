@@ -84,16 +84,35 @@
       "description": "",
       "event_date": null,
       "is_past": true,
-      "repository_folder": null,
-      "repository_url": null,
+      "repository_folder": "2025-07-22-multimodality",
+      "repository_url": "https://github.com/ai-that-works/ai-that-works/tree/main/2025-07-22-multimodality",
       "youtube_id": "sqJrl09dDmI",
       "youtube_url": "https://www.youtube.com/watch?v=sqJrl09dDmI",
       "in_youtube_show": true,
       "youtube_show_order": 65,
-      "mapping_note": "YouTube show entry without repository mapping",
+      "mapping_note": "Inferred companion Part 1 repository mapping",
       "repo_transcripts": [],
-      "repo_notes": [],
-      "repo_images": []
+      "repo_notes": [
+        "2025-07-22-multimodality/README.md",
+        "2025-07-22-multimodality/meta.md",
+        "2025-07-22-multimodality/socials.md"
+      ],
+      "repo_images": [
+        "2025-07-22-multimodality/data/page_0.png",
+        "2025-07-22-multimodality/data/page_1.png",
+        "2025-07-22-multimodality/data/page_2.png",
+        "2025-07-22-multimodality/data/page_3.png",
+        "2025-07-22-multimodality/data/page_4.png",
+        "2025-07-22-multimodality/data/same/boxed_common_1_2.png",
+        "2025-07-22-multimodality/data/same/boxed_common_1_3.png",
+        "2025-07-22-multimodality/data/same/boxed_common_1_4.png",
+        "2025-07-22-multimodality/data/same/exact_same_1_2.png",
+        "2025-07-22-multimodality/data/same/exact_same_1_3.png",
+        "2025-07-22-multimodality/data/same/exact_same_1_4.png",
+        "2025-07-22-multimodality/data/same/mask_same_1_2.png",
+        "2025-07-22-multimodality/data/same/mask_same_1_3.png",
+        "2025-07-22-multimodality/data/same/mask_same_1_4.png"
+      ]
     },
     {
       "guid": "aitw-001",

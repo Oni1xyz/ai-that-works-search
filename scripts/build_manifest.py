@@ -16,6 +16,11 @@ VIDEO_OVERRIDES = {
     # performance-engineering episode and is otherwise unmapped.
     "aitw-059": "mm6n4n09RaU",
 }
+SHOW_FOLDER_OVERRIDES = {
+    # The show labels this as Part 1; repository metadata identifies the companion video
+    # sCScFZB4Am8 in the same multimodality episode folder.
+    "sqJrl09dDmI": "2025-07-22-multimodality",
+}
 
 
 def video_id(url: str | None) -> str | None:
@@ -103,6 +108,18 @@ def main() -> int:
     for order, entry in enumerate(show_entries, 1):
         if entry["id"] in mapped_ids:
             continue
+        folder_name = SHOW_FOLDER_OVERRIDES.get(entry["id"])
+        folder = args.repo / folder_name if folder_name else None
+        files = [path for path in folder.rglob("*") if path.is_file()] if folder and folder.exists() else []
+        relative_files = [str(path.relative_to(args.repo)) for path in files]
+        transcript_files = [path for path in relative_files if "transcript" in Path(path).name.lower() or "trasncript" in Path(path).name.lower()]
+        note_files = [
+            path for path in relative_files
+            if Path(path).suffix.lower() in TEXT_SUFFIXES
+            and path not in transcript_files
+            and (Path(path).parent == Path(folder_name) or "/thoughts/" in f"/{path}")
+        ] if folder_name else []
+        image_files = [path for path in relative_files if Path(path).suffix.lower() in IMAGE_SUFFIXES]
         manifest.append({
             "guid": f"youtube-{entry['id']}",
             "season": None,
@@ -111,16 +128,16 @@ def main() -> int:
             "description": "",
             "event_date": None,
             "is_past": True,
-            "repository_folder": None,
-            "repository_url": None,
+            "repository_folder": folder_name,
+            "repository_url": f"https://github.com/ai-that-works/ai-that-works/tree/main/{folder_name}" if folder_name else None,
             "youtube_id": entry["id"],
             "youtube_url": entry.get("url") or f"https://www.youtube.com/watch?v={entry['id']}",
             "in_youtube_show": True,
             "youtube_show_order": order,
-            "mapping_note": "YouTube show entry without repository mapping",
-            "repo_transcripts": [],
-            "repo_notes": [],
-            "repo_images": [],
+            "mapping_note": "Inferred companion Part 1 repository mapping" if folder_name else "YouTube show entry without repository mapping",
+            "repo_transcripts": sorted(transcript_files),
+            "repo_notes": sorted(note_files),
+            "repo_images": sorted(image_files),
         })
 
     manifest.sort(key=lambda item: (item.get("event_date") or "", item.get("guid") or ""))

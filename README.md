@@ -20,15 +20,13 @@ The cloned upstream repository lives under `source/` and is intentionally ignore
 
 ## Model choice
 
-The referenced **Gemini Embedding 2** model is available through the Gemini API, not as downloadable Hugging Face weights. For local indexing, this project uses Google's official open `google/embeddinggemma-300m` model from Hugging Face.
+The referenced **Gemini Embedding 2** model is available through the Gemini API, not as downloadable Hugging Face weights. For local indexing, this project uses Google's current official open model, [`google/embeddinggemma-2`](https://huggingface.co/google/embeddinggemma-2), from Hugging Face.
 
-EmbeddingGemma is license-gated. Before downloading it:
+EmbeddingGemma 2 is not Gemini weights: it is a Gemma 4-derived, Apache-2.0 multimodal embedding model released by Google DeepMind. It is public and ungated on Hugging Face, supports 8,192-token inputs, emits 768-dimensional vectors, and supports Matryoshka reductions to 512/256/128 dimensions. This project uses its text path for transcripts and curated diagram captions.
 
-1. Sign into Hugging Face and accept the model's Gemma usage license.
-2. Run `hf auth login` locally.
-3. Never commit or paste the token into this repository.
+The older `google/embeddinggemma-300m` model is text-only and manually license-gated; it is not used here.
 
-A small MiniLM index can be built as a pipeline smoke test, but it is not the requested final model.
+A small MiniLM index is retained only as a fast pipeline smoke test, not the requested final model.
 
 ## Setup
 
@@ -66,7 +64,7 @@ The backfill uses `mlx-community/distil-whisper-large-v3`, records the transcrip
 ```bash
 uv run aitw-build \
   --chunks data/chunks.jsonl \
-  --model google/embeddinggemma-300m \
+  --model google/embeddinggemma-2 \
   --output index \
   --batch-size 16
 ```

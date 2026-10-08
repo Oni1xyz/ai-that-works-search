@@ -22,7 +22,7 @@ def encode(model: SentenceTransformer, texts: list[str], batch_size: int, kind: 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Embed the AI That Works corpus")
     parser.add_argument("--chunks", type=Path, default=Path("data/chunks.jsonl"))
-    parser.add_argument("--model", default="google/embeddinggemma-300m")
+    parser.add_argument("--model", default="google/embeddinggemma-2")
     parser.add_argument("--output", type=Path, default=Path("index"))
     parser.add_argument("--batch-size", type=int, default=16)
     args = parser.parse_args()
