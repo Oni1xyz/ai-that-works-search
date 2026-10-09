@@ -18,8 +18,10 @@ The corpus combines:
 
 ## Source material
 
+- **AI That Works is hosted by [Vaibhav Gupta (`@hellovai`)](https://github.com/hellovai) and [Dex Horthy (`@dexhorthy`)](https://github.com/dexhorthy).** This independent search project is built from their show and its companion materials; all underlying show content remains credited to its creators and contributors.
 - YouTube show/playlist: `PLi60mUelRAbFqfgymVfZttlkIyt0XHZjt`
-- GitHub: <https://github.com/ai-that-works/ai-that-works>
+- Official show repository: <https://github.com/ai-that-works/ai-that-works>
+- Official podcast page: <https://boundaryml.com/podcast>
 - Repository commit captured in each built index
 
 The cloned upstream repository lives under `source/` and is intentionally ignored by this project's Git history.
