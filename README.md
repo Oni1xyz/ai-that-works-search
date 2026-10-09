@@ -26,13 +26,7 @@ The cloned upstream repository lives under `source/` and is intentionally ignore
 
 ## Model choice
 
-The referenced **Gemini Embedding 2** model is available through the Gemini API, not as downloadable Hugging Face weights. For local indexing, this project uses Google's current official open model, [`google/embeddinggemma-2`](https://huggingface.co/google/embeddinggemma-2), from Hugging Face.
-
-EmbeddingGemma 2 does not contain Gemini weights. It is a Gemma 4-derived, Apache-2.0 multimodal embedding model from Google DeepMind. Hugging Face provides the model without an access gate. The model accepts inputs of up to 8,192 tokens. It produces 768-dimensional vectors and can reduce them to 512, 256, or 128 dimensions. This project uses the text path for transcripts and AI-assisted diagram captions.
-
-The older `google/embeddinggemma-300m` model is text-only and manually license-gated; it is not used here.
-
-A small MiniLM index can be built as a fast pipeline smoke test, but it is not the intended production model.
+This project uses Google's [`google/embeddinggemma-2`](https://huggingface.co/google/embeddinggemma-2) model from Hugging Face for local indexing. EmbeddingGemma 2 is an Apache-2.0 multimodal embedding model from Google DeepMind. The model accepts inputs of up to 8,192 tokens and produces 768-dimensional vectors. This project uses the text path for transcripts and AI-assisted diagram captions.
 
 ## Setup
 
